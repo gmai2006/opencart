@@ -1,0 +1,177 @@
+file(restPackage, modelPackageName, className, methods, create, update, delete) ::= <<
+package $restPackage$;
+
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import $modelPackageName$.*;
+
+/**
+ * Auto generated RESTful class
+ * @author paul
+ */
+ 
+@Path("/$className$")
+@Stateless
+@Produces({MediaType.APPLICATION_JSON})
+public class $className$Resource {
+  Log logger = LogFactory.getLog($className$Resource.class);
+  
+  @PersistenceContext
+  EntityManager entityManager;
+      
+  $methods ; separator="\n"$
+
+  $create$
+
+  $update$
+
+  $delete$
+}
+>>
+
+restSelectFile(restPackage, daoPackageName, modelPackageName, className, methods) ::= <<
+package $restPackage$;
+
+
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import $daoPackageName$.*;
+
+import $modelPackageName$.*;
+
+/**
+ * Auto generated RESTful class
+ * @author paul
+ */
+ 
+@Path("/$className$")
+@Stateless
+@Produces({MediaType.APPLICATION_JSON})
+public class $className$Resource {
+  Log logger = LogFactory.getLog($className$Resource.class);
+
+  @Inject
+  $className$DAOImpl service;
+    
+  $methods ; separator="\n"$
+}
+>>
+
+method(methodName, values, parameters) ::= <<
+    @Path("/$methodName$")
+    @GET
+    public Response $methodName$($parameters ; separator="," $) {
+       return Response.ok(service.$methodName$($values ; separator="," $).toString()).build();  
+    }
+>>
+
+
+find(className, type) ::= <<
+@Path("/find/{id}")
+@GET
+public $className$ find(@PathParam("id") $type$ id) {
+    return entityManager.find($className$.class, id);
+}
+>>
+
+create(className, setParameters) ::= <<
+@Path("")
+@PUT
+@Consumes(MediaType.APPLICATION_JSON)
+public Response create($className$ obj) {
+  entityManager.persist(obj);
+  return Response.ok().build();
+}
+>>
+
+update(className, setParameters) ::= <<
+@Consumes(MediaType.APPLICATION_JSON)
+@Path("")
+@POST
+public Response update($className$ obj) {
+  entityManager.merge(obj);
+  return Response.ok().build();
+}
+>>
+
+delete(className, type) ::= <<
+@Path("/{id}")
+@DELETE
+public void delete(@PathParam("id") $type$ id) {
+    $className$ obj = find(id);
+    if(null != obj) {
+        entityManager.remove(obj);
+    }
+}
+>>
+
+setParameter(fieldClassName, fieldName) ::= <<
+  obj.set$fieldClassName$($fieldName$);
+>>
+
+
+parameter(type, fieldName) ::= <<
+  @QueryParam("$fieldName$")  $type$ $fieldName$
+>>
+
+value(fieldName) ::= <<
+  $fieldName$
+>>
+
+testFile(packageName, className, testmethod) ::= <<
+package $packageName$.generated;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.sun.jersey.api.client.WebResource;
+import com.sun.jersey.test.framework.JerseyTest;
+public class $className$ResourceTest extends JerseyTest {
+
+    public $className$ResourceTest() throws Exception {
+        super("ovr.web.rest");
+    }
+
+    $testmethod$
+}
+>>
+
+testmethod(methodName, className, params) ::= <<
+   @Test
+    public void test$methodName$() {
+        WebResource webResource = resource();
+        String responseMsg = webResource.path("/$className$/list/")
+        $params : { param  | .queryParam("$param$", "") } ; separator="\n"$
+        .get(String.class);
+        JsonObject obj = new JsonParser().parse(responseMsg).getAsJsonObject();
+        obj.get("status").toString();
+        assertEquals("success", obj.get("status").toString());
+    }
+>>

@@ -1,0 +1,56 @@
+package com.opencart.catalog.dao.model.checkout;
+
+import javax.ws.rs.core.Response;
+
+public interface ModelCheckoutOrderDAO {
+  public Response editOrder();
+  public Response deleteOrder7();
+  public Response deleteOrder3();
+  public Response deleteOrder4();
+  public Response deleteOrder5();
+  public Response deleteOrder6();
+  public Response deleteOrder1();
+  public Response deleteOrder2();
+  public Response addOrderHistory();
+  public Response addOrder4();
+  public Response addOrder3();
+  public Response addOrder2();
+  public Response addOrder1();
+  public Response addOrder5();
+  public Response addOrderHistory20();
+  public Response addOrder();
+  public Response deleteOrder();
+  public Response addOrderHistory6();
+  public Response editOrder3();
+  public Response addOrderHistory5();
+  public Response editOrder2();
+  public Response addOrderHistory4();
+  public Response getOrder4();
+  public Response editOrder1();
+  public Response addOrderHistory3();
+  public Response addOrderHistory2();
+  public Response getOrder2();
+  public Response addOrderHistory1();
+  public Response getOrder3();
+  public Response getOrder1();
+  public Response addOrderHistory10();
+  public Response addOrderHistory11();
+  public Response editOrder9();
+  public Response editOrder8();
+  public Response editOrder7();
+  public Response addOrderHistory9();
+  public Response editOrder6();
+  public Response addOrderHistory8();
+  public Response editOrder5();
+  public Response addOrderHistory7();
+  public Response editOrder4();
+  public Response getOrder();
+  public Response addOrderHistory18();
+  public Response addOrderHistory19();
+  public Response addOrderHistory16();
+  public Response addOrderHistory17();
+  public Response addOrderHistory14();
+  public Response addOrderHistory15();
+  public Response addOrderHistory12();
+  public Response addOrderHistory13();
+}

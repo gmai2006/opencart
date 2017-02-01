@@ -1,0 +1,8 @@
+addOrder=$this->db->query("INSERT INTO `".DB_PREFIX."globalpay_order` SET `order_id` = '".(int)$order_info['order_id']."', `settle_type` = '".(int)$this->config->get('globalpay_auto_settle')."', `order_ref` = '".$this->db->escape($order_ref)."', `order_ref_previous` = '".$this->db->escape($order_ref)."', `date_added` = now(), `date_modified` = now(), `capture_status` = '".(int)$settle_status."', `currency_code` = '".$this->db->escape($order_info['currency_code'])."', `pasref` = '".$this->db->escape($pas_ref)."', `pasref_previous` = '".$this->db->escape($pas_ref)."', `authcode` = '".$this->db->escape($auth_code)."', `account` = '".$this->db->escape($account)."', `total` = '".$this->currency->format($order_info['total'],$order_info['currency_code'],$order_info['currency_value'],false)."'")
+#END
+addTransaction=$this->db->query("INSERT INTO `".DB_PREFIX."globalpay_order_transaction` SET `globalpay_order_id` = '".(int)$globalpay_order_id."', `date_added` = now(), `type` = '".$this->db->escape($type)."', `amount` = '".$this->currency->format($order_info['total'],$order_info['currency_code'],$order_info['currency_value'],false)."'")
+#END
+getMethod=$this->db->query("SELECT * FROM ".DB_PREFIX."zone_to_geo_zone WHERE geo_zone_id = '".(int)$this->config->get('globalpay_geo_zone_id')."' AND country_id = '".(int)$address['country_id']."' AND (zone_id = '".(int)$address['zone_id']."' OR zone_id = '0')")
+#END
+addHistory=$this->db->query("INSERT INTO ".DB_PREFIX."order_history SET order_id = '".(int)$order_id."', order_status_id = '".(int)$order_status_id."', notify = '0', comment = '".$this->db->escape($comment)."', date_added = NOW()")
+#END

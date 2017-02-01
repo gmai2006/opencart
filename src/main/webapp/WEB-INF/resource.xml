@@ -1,0 +1,7 @@
+<Resource id="ovr" type="DataSource">
+    JdbcDriver  com.mysql.jdbc.Driver
+    JdbcUrl jdbc:mysql://localhost:3306/opencart
+    UserName    opencart_ower 
+    Password    $eattle2006$
+  JtaManaged true
+</Resource>

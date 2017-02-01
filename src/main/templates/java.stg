@@ -1,0 +1,63 @@
+class(packageName, className, classStatements) ::= <<
+public class <className> extends Model {
+  <classStatements ; separator="\n" > 
+}
+>>
+
+function(returnedType, functionName, parameterLists, blockStatement) ::= <<
+public <returnedType> <functionName> (<parameterLists ; separator=",">)
+<blockStatement>
+
+>>
+
+blockStatement(innerStatementList) ::= <<
+{
+<innerStatementList>
+}
+>>
+
+innerStatementList(innerStatements) ::= <<
+<innerStatements; separator="\n" >
+>>
+
+innerStatement(statement) ::= <<
+<statement>
+>>
+
+statement(any) ::= <<
+<any>
+>>
+
+ifStatement1(expression, statement, elseIfStatements, elseStatement) ::= <<
+if (<expression>) 
+  <statement>
+  <elseIfStatements; separator="\n">
+  <elseStatement>
+
+>>
+
+ifStatement2(expression, statement, elseIfStatements, elseStatement) ::= <<
+if (<expression>) 
+  <statement>
+  <elseIfStatements; separator="\n">
+  <elseStatement>
+
+>>
+
+elseIfStatement(expression, statement) ::= <<
+elseif (<expression>)
+  <statement>
+
+>>
+
+elseStatement(statement) ::= <<
+else 
+<statement>
+
+>>
+
+whileStatement1(expression, statement) ::= <<
+while (<expression>) {
+  <statement>
+}
+>>

@@ -1,0 +1,4 @@
+isset=DAOUtils.isset
+int=Integer
+DB_PREFIX=oc_
+this.db.getLastId()=Integer

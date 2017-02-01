@@ -1,0 +1,188 @@
+file(packageName, modelPackage, className, methods) ::= <<
+package $packageName$;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.inject.Inject;
+import javax.ws.rs.core.Response;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import com.opencart.utils.BeanUtils;
+import com.opencart.dao.DAOUtils;
+import com.opencart.utils.BeanUtils;
+import com.opencart.model.*;
+
+import $modelPackage$.*;
+
+public class $className$DAOImpl implements $className$DAO {
+  private Log logger = LogFactory.getLog($className$DAOImpl.class);
+  
+  @Inject EntityManager em;
+  
+  $methods ; separator="\n\n"$
+
+}
+>>
+
+interface(packageName, className, methods) ::= <<
+package $packageName$;
+
+import javax.ws.rs.core.Response;
+
+public interface $className$DAO {
+  $methods; separator="\n"$
+}
+>>
+
+method(beanName, methodName, parameters, values) ::= <<
+public Response $methodName$($parameters ; separator =","$);
+>>
+
+selectMethod(beanName, methodName, queryName, set, parameters, validation, isSelectAll) ::= <<
+
+public Response $methodName$($parameters ; separator =","$) {
+  JsonArray array = new JsonArray();
+  
+  $if(validation)$$validation$$endif$
+
+  try {
+    String queryStr = BeanUtils.getQueryString("$queryName$");
+    
+    $if(isSelectAll)$
+    Query query = em.createNativeQuery(queryStr, $beanName$.class);
+    $else$
+    Query query = em.createNativeQuery(queryStr);
+    $endif$
+    
+    if (null == queryStr) {
+      logger.error("query string NOT FOUND $queryName$");
+      return Response.serverError().entity("query string NOT FOUND $queryName$").build();
+    }
+    
+    $set ; separator="\n"$ 
+    
+    $if(isSelectAll)$
+    List<$beanName$> list = (List<$beanName$>)query.getResultList();
+    $else$
+    List<Object[]> list = (List<Object[]>)query.getResultList();
+    $endif$
+    
+    if (null == list || list.isEmpty()) {
+      logger.warn("not record returned for $queryName$");
+      return Response.status(Response.Status.NOT_FOUND).entity("no record returned for $queryName$").build();
+    }
+    $if(isSelectAll)$
+    for ($beanName$ o : list) {
+      array.add(o.toJson());
+    }
+    $else$
+    for (Object[] o : list) {
+      array.add($beanName$.fromArray(o).toJson());
+    }
+    $endif$
+    
+  }
+  catch (Exception ex) {
+     logger.error("ERROR in methodName due to " + ex.getMessage());
+     return Response.serverError().entity(ex.getMessage()).build();
+  }
+  return Response.ok(array).build();
+}
+>>
+
+updateMethod(beanName, methodName, queryName, set, parameters, validation) ::= <<
+
+public Response $methodName$($parameters ; separator =","$) {
+  JsonArray array = new JsonArray();
+  int result = -1;
+  try {
+    String queryStr = BeanUtils.getQueryString("$queryName$");
+    
+    if (null == queryStr) {
+      logger.error("query string NOT FOUND $queryName$");
+      return Response.serverError().entity("query string NOT FOUND $queryName$").build();
+    }
+    
+
+    Map<String, Object> map = new HashMap<String, Object>();
+    $set ; separator="\n"$ 
+    
+    
+    result = DAOUtils.updateByQuery(em, queryStr, map);
+
+  }
+  catch (Exception ex) {
+     logger.error("ERROR in methodName due to " + ex.getMessage());
+     return Response.serverError().entity(ex.getMessage()).build();
+  }
+  return Response.ok(result).build();
+}
+>>
+
+parameter(type, fieldName) ::= <<
+  $type$ $fieldName$
+>>
+
+setParameter(name, newName) ::= <<
+  query.setParameter("$name$", $name$);
+>>
+
+setMap(name, newName) ::= <<
+  map.put("$name$", $name$);
+>>
+
+validation(fields)::= <<
+if ($fields : { field | null == $field$ } ; separator=" && " $) {
+  return Response.serverError().entity("missing required params").build();
+}
+>>
+
+testFile(className, testmethods) ::= <<
+package ntcss.web.service.generated;
+
+import java.util.List;
+import static org.junit.Assert.assertFalse;
+
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import com.google.gson.JsonObject;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+public class $className$ {
+  static NTCSSPBSelectService service;
+  
+  @BeforeClass
+  public static void before() {
+    service = new NTCSSPBSelectService();
+  }
+
+  @AfterClass
+  public static void after() {
+    service = null;
+  }
+  
+  $testmethods  ; separator="\n\n"$
+}
+>>
+
+testmethod(className, arguments, argTypes) ::= <<
+  @Test
+  public void test$className$() throws Exception {
+      $argTypes ; separator=" "$
+      JsonObject result = service.get$className$($arguments ; separator=","$);
+      System.out.println("result: " + result);
+      assertFalse(result.isJsonNull());
+    }
+>>

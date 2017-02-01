@@ -1,0 +1,53 @@
+package com.opencart.admin.dao.model.customer;
+
+import javax.ws.rs.core.Response;
+
+public interface ModelCustomerCustomerDAO {
+  public Response editCustomer3();
+  public Response editCustomer();
+  public Response editCustomer2();
+  public Response getAddress2();
+  public Response deleteCustomer5();
+  public Response editCustomer1();
+  public Response deleteCustomer3();
+  public Response getAddress1();
+  public Response deleteCustomer4();
+  public Response deleteCustomer1();
+  public Response getTotalAddressesByZoneId();
+  public Response deleteCustomer2();
+  public Response editCustomer4();
+  public Response getRewards();
+  public Response deleteTransaction();
+  public Response addHistory();
+  public Response deleteLoginAttempts();
+  public Response getTotalIps();
+  public Response addCustomer();
+  public Response getTotalHistories();
+  public Response getTotalRewards();
+  public Response getTotalCustomersAwaitingApproval();
+  public Response deleteReward();
+  public Response getRewardTotal(  Integer Points);
+  public Response getTotalCustomersByCustomerGroupId();
+  public Response getAddress();
+  public Response addTransaction();
+  public Response getAddresses(  Integer AddressId);
+  public Response getTotalAddressesByCustomerId();
+  public Response getTotalAddressesByCountryId();
+  public Response addCustomer1();
+  public Response addCustomer2();
+  public Response editToken();
+  public Response getTotalCustomerRewardsByOrderId();
+  public Response getTransactions();
+  public Response deleteCustomer();
+  public Response getCustomerByEmail();
+  public Response getTotalCustomersByIp();
+  public Response getTransactionTotal(  Long Amount);
+  public Response getTotalTransactions();
+  public Response getCustomer();
+  public Response addReward();
+  public Response approve();
+  public Response getTotalLoginAttempts();
+  public Response getHistories(  String Comment);
+  public Response getIps();
+  public Response getTotalTransactionsByOrderId();
+}

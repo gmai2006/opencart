@@ -1,0 +1,126 @@
+import java.util.regex.Pattern
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+def xmlFile = "./schema.xml"
+def daoDir = "./src/main/java/com.tomcathostingservice/opencart/model/"
+
+dependencies {
+    compile "org.apache.openjpa:openjpa-all:2.3.0"
+	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'    
+}
+
+repositories {
+    mavenCentral()
+    flatDir { dirs "./" }
+}
+
+
+task cleanSchemaXml(type: Delete) {
+    delete file(xmlFile)
+}
+
+task generateSchemaXml(type: JavaExec, dependsOn: cleanSchemaXml) {
+    classpath = configurations.compile
+    main = "org.apache.openjpa.jdbc.schema.SchemaTool"
+    args "-properties", getPropertiesFile(),
+         "-action", "reflect",
+         "-file", xmlFile
+
+    doFirst {
+        println "Generating schema.xml..."
+    }
+
+    doLast {
+        println "Done generating schema.xml."
+        println "Updating schema.xml..."
+        //updateSchema()
+        println "Done updating schema.xml."
+    }
+}
+
+task cleanEntities(type: Delete) {
+    delete fileTree(dir: daoDir)
+}
+
+task generateEntities(type: JavaExec, dependsOn: [cleanEntities, clean, generateSchemaXml]) {
+    classpath = files(configurations.compile, jar.archivePath)  // Add this module's jar to the executed classpath, so we can use the EntityCustomizer (which is assumed to be in this module).
+    main = "org.apache.openjpa.jdbc.meta.ReverseMappingTool"
+    args "-metadata", "none",
+         "-annotations", "true",
+         "-nullableAsObject", "true",
+         "-useGenericCollections", "true",
+         "-properties", getPropertiesFile(),
+//        "-customizerClass", "{path.to.your.EntityCustomizer}",
+         "-directory", daoDir,
+         "-pkg", "ovr.web.dao2",
+         xmlFile
+
+    doFirst {
+        println "Generating entity classes from schema.xml..."
+    }
+
+    doLast {
+        println "Done generating entity classes."
+    }
+}
+
+private String getPropertiesFile() {
+    // File is read directly from the file-system, will not work from a Jar.
+    return file("./openjpa.xml").getAbsolutePath()
+}
+
+private void updateSchema() {
+    // Only this schema will be kept.
+    final def schemasToKeep = ['dbo']
+
+    // These tables will be removed from the .xml
+    final def tablesToRemove = [
+        'ReplicationMonitor', 'DDLEvents', 'AuditTrail', 'AuditTrailErrorLog', 'sysdiagrams', 'table_relations',
+        'tasks_queue', 'tasks_queue_archive',
+        '.*history'    // Remove all tables ending with 'history'.
+    ].collect { Pattern.compile(it) }
+
+    final File xmlFile = file('schema.xml')
+
+    // Read xml.
+    final def xml = new XmlParser().parse(xmlFile)
+
+    // Remove all unnecessary schemas.
+    filterSchemas(xml, schemasToKeep)
+
+    // Remove all unnecessary tables.
+    filterTables(xml, tablesToRemove)
+
+    // Save updated xml file.
+    new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile))).print(xml)
+}
+
+private void filterSchemas(Node xml, List<String> schemasToKeep) {
+    final List<Node> removedSchemas = []
+    xml.each { schema ->
+        final String name = schema.@name
+        if (!schemasToKeep.contains(name)) {
+            println("Removing schema: $name")
+            removedSchemas += schema
+        }
+    }
+    removedSchemas.each { xml.remove(it) }
+}
+
+private void filterTables(Node xml, List<Pattern> tablesToRemove) {
+    xml.each { schema ->
+        final List<Node> removedTables = []
+        schema.each { table ->
+            final String name = table.@name
+            if (tablesToRemove.any { it.matcher(name).matches() }) {
+                println("Removing table: $name")
+                removedTables += table
+            }
+        }
+        removedTables.each { schema.remove(it) }
+    }
+}

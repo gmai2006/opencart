@@ -1,0 +1,235 @@
+file(schemaName, tableName, packageName, className, fields, methods, compoundKey, fromJson, fromArray, toJsonArray, toString) ::= <<
+package <packageName>;
+
+import com.google.gson.*;
+import java.util.*;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+
+import com.opencart.utils.BeanUtils;
+
+@Entity
+@Table(name="<tableName>")
+<if(compoundKey)>@IdClass(value=<compoundKey>.class)<endif>
+public class <className>  {
+  <fields ; separator="\n\n">
+  
+  public <className>() {
+  }
+  
+  <methods ; separator="\n">
+  
+  public String toJson() {
+      <className> obj = this; 
+    Gson gson = new GsonBuilder()
+           .setDateFormat("yyyy-MM-dd").create();
+    return gson.toJson(obj);
+  }
+  
+  <fromJson>
+  
+  <fromArray>
+  
+  <toJsonArray>
+  
+  <toString>
+}
+>>
+
+angularModel(className, fields) ::= <<
+  export class <className> {
+    <fields ; separator="\n">
+    
+    constructor() {
+    }
+}
+>>
+
+angularField(name, type) ::= <<
+  public <name>: <type>;
+>>
+
+field(basic, columnName, length, notnull, temporal, temporalType, type, fieldName) ::= <<
+<if(basic)>@Basic<else>@Id<endif>
+@Column(name="<columnName>" <if(length)>, length=<length><endif>)
+<if(notnull)>@NotNull<endif>
+<if(temporal)>@Temporal(TemporalType.<temporalType>)<endif>
+<if(temporal)>//@XmlJavaTypeAdapter(SqlDateAdapter.class)<endif>
+private <type> <fieldName>;
+>>
+
+getMethod(name, type, className) ::= <<
+public <type> get<className>() {
+  return this.<name>;
+}
+>>
+
+setMethod(name, type, className) ::= <<
+public void set<className>( <type> value) {
+  this.<name> = value;
+}
+>>
+
+toJson() ::= <<
+public JsonObject toJson() {
+  Gson gson = new GsonBuilder()
+         .setDateFormat("yyyy-MM-dd").create();
+  return gson.toJson(this);
+}
+>>
+
+toString(names) ::= <<
+public String toString() {
+  StringBuilder builder = new StringBuilder();
+  <names : { name |  builder.append(String.valueOf(this.<name>)); }; separator="\n">;
+  return builder.toString();
+}
+>>
+
+fromJson(className, sets) ::= <<
+public static <className> fromJson(JsonObject o) {
+  Gson gson = new GsonBuilder()
+         .setDateFormat("yyyy-MM-dd").create();
+    return gson.fromJson(o, <className>.class);
+  }
+>>
+
+toJsonArray(className) ::= <<
+public static JsonArray toJsonArray(List\<<className>\> list) {
+    JsonArray array = new JsonArray();
+    for (<className> dao : list) {
+      array.add(dao.toJson());
+    }
+    return array;
+  }
+>>
+
+set(className, name, type) ::= <<
+  if (null != o.get("<name>") && !o.get("<name>").isJsonNull()) {
+        result.set<className>(<type>.valueOf(o.get("<name>").getAsString()));
+    } else {
+      result.set<className>(null);
+    }
+>>
+
+fromArray(className, getArrayST) ::= <<
+public static <className> fromArray(Object[] o) {
+    <className> result = new <className>();
+    int i = 0;
+    <getArrayST ; separator="\n">
+    return result;
+  }
+>>
+
+getArrayST(className, type) ::= <<
+  result.set<className>((<type>)BeanUtils.getNullableValue(o[i++]));
+>>
+
+embeddedClass(packageName, className, fields, set, get, hashCode) ::= <<
+package <packageName>;
+
+import java.util.*;
+import javax.persistence.*;
+import java.io.Serializable;
+/**
+This class is auto generated from database schema
+*/
+
+public class <className>  implements Serializable  {
+  <fields ; separator="\n\n">
+  
+  public <className>() {
+        // Your class must have a no-arq constructor
+    }
+    
+    <set ;  separator="\n\n">
+    
+    <get ; separator="\n\n">
+
+  <hashCode>
+ 
+}
+>>
+
+embeddableField (type, fieldName, columnName) ::= <<
+@Column(name="<columnName>")
+private <type> <fieldName>;
+>>
+
+hashCode(fields) ::= <<
+@Override
+public int hashCode() {
+    return <first(fields)> 
+    + <rest(fields) ; separator="\n + " >;
+}
+>>
+  
+
+testFile(className, testmethods) ::= <<
+package ovr.web.dao;
+import java.math.BigDecimal;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertEquals;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import com.google.gson.JsonObject;
+import ovr.web.service3.OvrServiceImpl;
+import ovr.web.utils.Utils;
+public class <className> {
+  static OvrServiceImpl service;
+  
+  @BeforeClass
+  public static void before() {
+    service = new OvrServiceImpl();
+  }
+
+  @AfterClass
+  public static void after() {
+    service = null;
+  }
+  
+  <testmethods  ; separator="\n\n">
+}
+>>
+
+testmethod(tableName, className, primaryKey, primaryClass, type, isString, isLong) ::= <<
+  @Test
+  public void test<className>() throws Exception {
+    Object[] result = service.getSingleResultSingleObject("select * from <tableName>");
+    assertFalse(null == result);
+    <className> object = <className>.fromArray(result);
+    JsonObject json = object.toJson();
+    String  s = object.toString();
+  }
+  
+  @Test
+    public void testFind<className>() throws Exception {
+      Object[] result = service.getSingleResultSingleObject("select * from <tableName>");
+      assertFalse(null == result);
+      <className> object = <className>.fromArray(result);
+      JsonObject json = object.toJson();
+      
+      //test json transformation
+      <className> newobj = <className>.fromJson(json);
+      <className> another = service.find(<className>.class, newobj.get<primaryClass>());
+      assertEquals(newobj.get<primaryClass>(), another.get<primaryClass>());
+    }
+    
+    @Test
+    public void testCreateDelete<className>() throws Exception {
+      Object[] result = service.getSingleResultSingleObject("select * from <tableName>");
+      assertFalse(null == result);
+      <className> object = <className>.fromArray(result);
+      JsonObject json = object.toJson();
+      
+      <className> newobj = <className>.fromJson(json);
+      Object o = service.getSingleResultSingleObject("select max(<primaryKey>) from <tableName>");
+      <type> maxId = <if(isString)> "x" <elseif(isLong)> ((BigDecimal)o).longValue() + 1 <else> ((<type>)Utils.getNullableValue(o)) + 1  <endif>;
+      newobj.set<primaryClass>(maxId);
+      service.create(newobj);
+      service.delete(<className>.class, maxId);
+    }
+  
+>>
