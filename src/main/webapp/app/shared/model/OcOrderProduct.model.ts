@@ -1,13 +1,13 @@
   export class OcOrderProduct {
       public reward: number;
-      public total: number;
+      public total: Float;
       public orderProductId: number;
       public quantity: number;
-      public price: number;
+      public price: Float;
       public productId: number;
       public name: string;
       public model: string;
-      public tax: number;
+      public tax: Float;
       public orderId: number;
 
     constructor() {

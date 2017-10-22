@@ -32,11 +32,11 @@
       public paymentAddressFormat: string;
       public currencyCode: string;
       public storeUrl: string;
-      public total: number;
+      public total: Float;
       public shippingCountryId: number;
       public paymentCountry: string;
       public storeName: string;
-      public commission: number;
+      public commission: Float;
       public shippingFirstname: string;
       public paymentCity: string;
       public shippingPostcode: string;
@@ -49,7 +49,7 @@
       public storeId: number;
       public customField: string;
       public invoiceNo: number;
-      public currencyValue: number;
+      public currencyValue: Float;
       public paymentAddress2: string;
       public paymentAddress1: string;
       public dateModified: java.sql.Timestamp;

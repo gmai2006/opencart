@@ -2,7 +2,7 @@
       public dateAdded: java.sql.Timestamp;
       public toEmail: string;
       public voucherThemeId: number;
-      public amount: number;
+      public amount: Float;
       public code: string;
       public fromEmail: string;
       public toName: string;

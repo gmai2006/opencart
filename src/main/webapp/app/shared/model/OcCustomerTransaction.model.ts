@@ -1,6 +1,6 @@
   export class OcCustomerTransaction {
       public dateAdded: java.sql.Timestamp;
-      public amount: number;
+      public amount: Float;
       public description: string;
       public customerTransactionId: number;
       public customerId: number;

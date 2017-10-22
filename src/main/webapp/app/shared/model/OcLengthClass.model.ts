@@ -1,6 +1,6 @@
   export class OcLengthClass {
       public lengthClassId: number;
-      public value: number;
+      public value: Float;
 
     constructor() {
     }

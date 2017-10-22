@@ -1,8 +1,8 @@
   export class OcRecurring {
       public duration: number;
-      public trialPrice: number;
+      public trialPrice: Float;
       public recurringId: number;
-      public price: number;
+      public price: Float;
       public trialStatus: number;
       public trialCycle: number;
       public cycle: number;

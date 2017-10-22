@@ -1,10 +1,10 @@
   export class OcCoupon {
       public code: string;
-      public discount: number;
+      public discount: Float;
       public dateEnd: java.util.Date;
       public type: string;
       public dateAdded: java.sql.Timestamp;
-      public total: number;
+      public total: Float;
       public dateStart: java.util.Date;
       public couponId: number;
       public shipping: Boolean;

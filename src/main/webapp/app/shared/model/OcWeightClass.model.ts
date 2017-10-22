@@ -1,6 +1,6 @@
   export class OcWeightClass {
       public weightClassId: number;
-      public value: number;
+      public value: Float;
 
     constructor() {
     }

@@ -2,13 +2,13 @@
       public orderRecurringId: number;
       public recurringId: number;
       public recurringDuration: number;
-      public recurringPrice: number;
+      public recurringPrice: Float;
       public productName: string;
       public productQuantity: number;
       public trial: Boolean;
       public reference: string;
       public dateAdded: java.sql.Timestamp;
-      public trialPrice: number;
+      public trialPrice: Float;
       public productId: number;
       public recurringFrequency: string;
       public recurringName: string;

@@ -13,7 +13,7 @@
       public bankName: string;
       public bankBranchNumber: string;
       public company: string;
-      public commission: number;
+      public commission: Float;
       public payment: string;
       public fax: string;
       public paypal: string;

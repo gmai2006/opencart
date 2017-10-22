@@ -4,12 +4,12 @@
       public productOptionValueId: number;
       public subtract: Boolean;
       public pricePrefix: string;
-      public weight: number;
+      public weight: Float;
       public weightPrefix: string;
       public pointsPrefix: string;
       public points: number;
       public productOptionId: number;
-      public price: number;
+      public price: Float;
       public productId: number;
       public optionId: number;
 
