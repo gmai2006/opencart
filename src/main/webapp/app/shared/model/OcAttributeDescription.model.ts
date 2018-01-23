@@ -1,7 +1,7 @@
   export class OcAttributeDescription {
-      public attributeId: number;
-      public name: string;
-      public languageId: number;
+      public attribute_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

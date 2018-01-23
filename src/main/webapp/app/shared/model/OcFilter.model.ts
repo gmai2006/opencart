@@ -1,7 +1,7 @@
   export class OcFilter {
-      public filterId: number;
-      public sortOrder: number;
-      public filterGroupId: number;
+      public filter_id: Integer;
+      public filter_group_id: Integer;
+      public sort_order: Integer;
 
     constructor() {
     }

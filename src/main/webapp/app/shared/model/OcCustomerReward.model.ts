@@ -1,10 +1,10 @@
   export class OcCustomerReward {
-      public dateAdded: java.sql.Timestamp;
-      public customerRewardId: number;
-      public description: string;
-      public customerId: number;
-      public orderId: number;
-      public points: number;
+      public customer_reward_id: Integer;
+      public customer_id: Integer;
+      public order_id: Integer;
+      public description: String;
+      public points: Integer;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

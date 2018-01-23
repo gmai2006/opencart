@@ -1,8 +1,8 @@
   export class OcZone {
-      public zoneId: number;
-      public code: string;
-      public name: string;
-      public countryId: number;
+      public zone_id: Integer;
+      public country_id: Integer;
+      public name: String;
+      public code: String;
       public status: Boolean;
 
     constructor() {

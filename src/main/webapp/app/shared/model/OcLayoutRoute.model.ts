@@ -1,8 +1,8 @@
   export class OcLayoutRoute {
-      public storeId: number;
-      public layoutId: number;
-      public route: string;
-      public layoutRouteId: number;
+      public layout_route_id: Integer;
+      public layout_id: Integer;
+      public store_id: Integer;
+      public route: String;
 
     constructor() {
     }

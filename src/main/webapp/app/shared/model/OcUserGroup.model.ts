@@ -1,7 +1,7 @@
   export class OcUserGroup {
-      public name: string;
-      public permission: string;
-      public userGroupId: number;
+      public user_group_id: Integer;
+      public name: String;
+      public permission: String;
 
     constructor() {
     }

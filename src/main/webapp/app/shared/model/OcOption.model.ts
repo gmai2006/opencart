@@ -1,7 +1,7 @@
   export class OcOption {
-      public optionId: number;
-      public type: string;
-      public sortOrder: number;
+      public option_id: Integer;
+      public type: String;
+      public sort_order: Integer;
 
     constructor() {
     }

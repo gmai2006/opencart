@@ -1,0 +1,22 @@
+{
+  "ModelAccountTransaction.getTotalTransactions.getTotalTransactions": [
+    {
+      "customer_transaction_id": 1,
+      "customer_id": 0,
+      "order_id": 0,
+      "description": "s",
+      "amount": 0.0000,
+      "date_added": "Jan 15, 2018 9:32:35 PM"
+    }
+  ],
+  "ModelAccountTransaction.getTotalAmount.getTotalAmount": [
+    {
+      "customer_transaction_id": 1,
+      "customer_id": 0,
+      "order_id": 0,
+      "description": "s",
+      "amount": 0.0000,
+      "date_added": "Jan 15, 2018 9:32:35 PM"
+    }
+  ]
+}

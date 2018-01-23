@@ -1,7 +1,7 @@
   export class OcOrderStatus {
-      public orderStatusId: number;
-      public name: string;
-      public languageId: number;
+      public order_status_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

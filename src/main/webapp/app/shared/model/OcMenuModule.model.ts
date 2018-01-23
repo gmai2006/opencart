@@ -1,8 +1,8 @@
   export class OcMenuModule {
-      public code: string;
-      public menuModuleId: number;
-      public sortOrder: number;
-      public menuId: number;
+      public menu_module_id: Integer;
+      public menu_id: Integer;
+      public code: String;
+      public sort_order: Integer;
 
     constructor() {
     }

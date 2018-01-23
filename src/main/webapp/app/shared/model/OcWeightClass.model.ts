@@ -1,6 +1,6 @@
   export class OcWeightClass {
-      public weightClassId: number;
-      public value: Float;
+      public weight_class_id: Integer;
+      public value: java.math.BigDecimal;
 
     constructor() {
     }

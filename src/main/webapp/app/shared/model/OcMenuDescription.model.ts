@@ -1,7 +1,7 @@
   export class OcMenuDescription {
-      public name: string;
-      public languageId: number;
-      public menuId: number;
+      public menu_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

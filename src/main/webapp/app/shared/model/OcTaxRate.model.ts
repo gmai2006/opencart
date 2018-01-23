@@ -1,11 +1,11 @@
   export class OcTaxRate {
-      public taxRateId: number;
-      public dateAdded: java.sql.Timestamp;
-      public dateModified: java.sql.Timestamp;
-      public rate: Float;
-      public geoZoneId: number;
-      public name: string;
-      public type: string;
+      public tax_rate_id: Integer;
+      public geo_zone_id: Integer;
+      public name: String;
+      public rate: java.math.BigDecimal;
+      public type: String;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

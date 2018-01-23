@@ -1,7 +1,7 @@
   export class OcProductToLayout {
-      public storeId: number;
-      public layoutId: number;
-      public productId: number;
+      public product_id: Integer;
+      public store_id: Integer;
+      public layout_id: Integer;
 
     constructor() {
     }

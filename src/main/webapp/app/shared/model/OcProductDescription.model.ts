@@ -1,12 +1,12 @@
   export class OcProductDescription {
-      public metaDescription: string;
-      public metaTitle: string;
-      public productId: number;
-      public metaKeyword: string;
-      public name: string;
-      public description: string;
-      public languageId: number;
-      public tag: string;
+      public product_id: Integer;
+      public language_id: Integer;
+      public name: String;
+      public description: String;
+      public tag: String;
+      public meta_title: String;
+      public meta_description: String;
+      public meta_keyword: String;
 
     constructor() {
     }

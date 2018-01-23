@@ -1,0 +1,20 @@
+{
+  "ModelLocalisationZone.getZonesByCountryId.getZonesByCountryId": [
+    {
+      "zone_id": 1,
+      "country_id": 1,
+      "name": "Badakhshan",
+      "code": "BDS",
+      "status": true
+    }
+  ],
+  "ModelLocalisationZone.getZone.getZone": [
+    {
+      "zone_id": 1,
+      "country_id": 1,
+      "name": "Badakhshan",
+      "code": "BDS",
+      "status": true
+    }
+  ]
+}

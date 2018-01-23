@@ -1,8 +1,8 @@
   export class OcDownload {
-      public dateAdded: java.sql.Timestamp;
-      public filename: string;
-      public downloadId: number;
-      public mask: string;
+      public download_id: Integer;
+      public filename: String;
+      public mask: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

@@ -1,9 +1,9 @@
   export class OcMenu {
-      public storeId: number;
-      public link: string;
-      public type: string;
-      public sortOrder: number;
-      public menuId: number;
+      public menu_id: Integer;
+      public store_id: Integer;
+      public type: String;
+      public link: String;
+      public sort_order: Integer;
       public status: Boolean;
 
     constructor() {

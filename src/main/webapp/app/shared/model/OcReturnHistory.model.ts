@@ -1,10 +1,10 @@
   export class OcReturnHistory {
-      public dateAdded: java.sql.Timestamp;
-      public returnHistoryId: number;
-      public returnId: number;
-      public returnStatusId: number;
-      public comment: string;
+      public return_history_id: Integer;
+      public return_id: Integer;
+      public return_status_id: Integer;
       public notify: Boolean;
+      public comment: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

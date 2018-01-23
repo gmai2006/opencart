@@ -1,13 +1,13 @@
   export class OcModification {
-      public dateAdded: java.sql.Timestamp;
-      public code: string;
-      public modificationId: number;
-      public author: string;
-      public xml: string;
-      public name: string;
-      public link: string;
-      public version: string;
+      public modification_id: Integer;
+      public name: String;
+      public code: String;
+      public author: String;
+      public version: String;
+      public link: String;
+      public xml: String;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

@@ -1,6 +1,6 @@
   export class OcInformationToStore {
-      public informationId: number;
-      public storeId: number;
+      public information_id: Integer;
+      public store_id: Integer;
 
     constructor() {
     }

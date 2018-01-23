@@ -1,7 +1,7 @@
   export class OcCustomFieldValue {
-      public customFieldId: number;
-      public customFieldValueId: number;
-      public sortOrder: number;
+      public custom_field_value_id: Integer;
+      public custom_field_id: Integer;
+      public sort_order: Integer;
 
     constructor() {
     }

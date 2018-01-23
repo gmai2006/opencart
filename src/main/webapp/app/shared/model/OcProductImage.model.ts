@@ -1,8 +1,8 @@
   export class OcProductImage {
-      public image: string;
-      public productId: number;
-      public sortOrder: number;
-      public productImageId: number;
+      public product_image_id: Integer;
+      public product_id: Integer;
+      public image: String;
+      public sort_order: Integer;
 
     constructor() {
     }

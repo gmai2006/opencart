@@ -1,24 +1,24 @@
   export class OcOrderRecurring {
-      public orderRecurringId: number;
-      public recurringId: number;
-      public recurringDuration: number;
-      public recurringPrice: Float;
-      public productName: string;
-      public productQuantity: number;
+      public order_recurring_id: Integer;
+      public order_id: Integer;
+      public reference: String;
+      public product_id: Integer;
+      public product_name: String;
+      public product_quantity: Integer;
+      public recurring_id: Integer;
+      public recurring_name: String;
+      public recurring_description: String;
+      public recurring_frequency: String;
+      public recurring_cycle: Short;
+      public recurring_duration: Short;
+      public recurring_price: java.math.BigDecimal;
       public trial: Boolean;
-      public reference: string;
-      public dateAdded: java.sql.Timestamp;
-      public trialPrice: Float;
-      public productId: number;
-      public recurringFrequency: string;
-      public recurringName: string;
-      public trialCycle: number;
-      public orderId: number;
-      public recurringCycle: number;
-      public trialFrequency: string;
-      public recurringDescription: string;
-      public trialDuration: number;
-      public status: number;
+      public trial_frequency: String;
+      public trial_cycle: Short;
+      public trial_duration: Short;
+      public trial_price: java.math.BigDecimal;
+      public status: Byte;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

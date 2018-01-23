@@ -1,6 +1,6 @@
   export class OcLayout {
-      public layoutId: number;
-      public name: string;
+      public layout_id: Integer;
+      public name: String;
 
     constructor() {
     }

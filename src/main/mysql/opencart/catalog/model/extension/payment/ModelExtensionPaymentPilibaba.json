@@ -1,0 +1,12 @@
+{
+  "ModelExtensionPaymentPilibaba.getOrderTaxAmount.getOrderTaxAmount": [
+    {
+      "order_total_id": 1,
+      "order_id": 0,
+      "code": "s",
+      "title": "s",
+      "value": 0.0000,
+      "sort_order": 0
+    }
+  ]
+}

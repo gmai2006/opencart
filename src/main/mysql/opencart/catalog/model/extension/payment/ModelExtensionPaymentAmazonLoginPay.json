@@ -1,0 +1,20 @@
+{
+  "ModelExtensionPaymentAmazonLoginPay.getTransactions.getTransactions": [],
+  "ModelExtensionPaymentAmazonLoginPay.addAddress.addAddress": [
+    {
+      "address_id": 1,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "company": "s",
+      "address_1": "s",
+      "address_2": "s",
+      "city": "s",
+      "postcode": "s",
+      "country_id": 0,
+      "zone_id": 0,
+      "custom_field": "s"
+    }
+  ],
+  "ModelExtensionPaymentAmazonLoginPay.getOrder.getOrder": []
+}

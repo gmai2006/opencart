@@ -1,0 +1,22 @@
+{
+  "ModelAccountCustomerGroup.getCustomerGroup.getCustomerGroup": [
+    {
+      "approval": 0,
+      "sort_order": 1,
+      "customer_group_id": 1,
+      "language_id": 1,
+      "name": "Default",
+      "description": "test"
+    }
+  ],
+  "ModelAccountCustomerGroup.getCustomerGroups.getCustomerGroups": [
+    {
+      "approval": 0,
+      "sort_order": 1,
+      "customer_group_id": 1,
+      "language_id": 1,
+      "name": "Default",
+      "description": "test"
+    }
+  ]
+}

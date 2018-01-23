@@ -1,0 +1,10 @@
+{
+  "ModelExtensionModule.getModule.getModule": [
+    {
+      "module_id": 27,
+      "name": "Home Page",
+      "code": "slideshow",
+      "setting": "{\"name\":\"Home Page\",\"banner_id\":\"7\",\"width\":\"1140\",\"height\":\"380\",\"status\":\"1\"}"
+    }
+  ]
+}

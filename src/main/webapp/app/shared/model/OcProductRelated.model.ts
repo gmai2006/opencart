@@ -1,6 +1,6 @@
   export class OcProductRelated {
-      public relatedId: number;
-      public productId: number;
+      public product_id: Integer;
+      public related_id: Integer;
 
     constructor() {
     }

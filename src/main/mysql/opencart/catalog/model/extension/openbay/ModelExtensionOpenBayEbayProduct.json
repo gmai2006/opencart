@@ -1,0 +1,149 @@
+{
+  "ModelExtensionOpenBayEbayProduct.lengthClassExists.lengthClassExists": [
+    {
+      "length_class_id": 1,
+      "language_id": 1,
+      "title": "Centimeter",
+      "unit": "cm"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.getProductOption.getProductOption": [
+    {
+      "product_option_id": 224,
+      "product_id": 35,
+      "option_id": 11,
+      "value": "",
+      "required": true
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.getOption.getOption": [
+    {
+      "type": "radio",
+      "sort_order": 1,
+      "option_id": 1,
+      "language_id": 1,
+      "name": "Radio"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.attributeGroupExists.getQry": [
+    {
+      "attribute_group_id": 3,
+      "language_id": 1,
+      "name": "Memory"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.attributeExists.getQry": [
+    {
+      "language_id": 1,
+      "name": "Description",
+      "attribute_id": 1,
+      "attribute_group_id": 6,
+      "sort_order": 1
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.getProductOptionValue.getProductOptionValue": [
+    {
+      "product_option_value_id": 1,
+      "product_option_id": 217,
+      "product_id": 42,
+      "option_id": 5,
+      "option_value_id": 41,
+      "quantity": 100,
+      "subtract": false,
+      "price": 1.0000,
+      "price_prefix": "+",
+      "points": 0,
+      "points_prefix": "+",
+      "weight": 1.00000000,
+      "weight_prefix": "+"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.attributeAdd.attributeAdd": [
+    {
+      "product_id": 43,
+      "attribute_id": 2,
+      "language_id": 1,
+      "text": "1"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.manufacturerExists.getQry": [
+    {
+      "manufacturer_id": 1,
+      "name": "quillingartist.com",
+      "image": "",
+      "sort_order": 1
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.manufacturerExists.getQry2": [
+    {
+      "manufacturer_id": 1,
+      "name": "quillingartist.com",
+      "image": "",
+      "sort_order": 1
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.attributeExists.getQry2": [
+    {
+      "attribute_id": 1,
+      "attribute_group_id": 6,
+      "sort_order": 1
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.repairCategories.repairCategories": [
+    {
+      "category_id": 1,
+      "path_id": 1,
+      "level": 1
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.attributeGroupExists.getQry2": [
+    {
+      "attribute_group_id": 3,
+      "sort_order": 2
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.weightClassExists.weightClassExists": [
+    {
+      "weight_class_id": 1,
+      "language_id": 1,
+      "title": "Kilogram",
+      "unit": "kg"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.importItems.importItems": [
+    {
+      "image": "Nature",
+      "parent_id": 0,
+      "top": true,
+      "column": 0,
+      "sort_order": 1,
+      "status": true,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "category_id": 1,
+      "language_id": 1,
+      "name": "Nature",
+      "description": "Nature",
+      "meta_title": "Nature",
+      "meta_description": "",
+      "meta_keyword": "Nature"
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.createOption.createOption": [
+    {
+      "option_id": 1,
+      "type": "radio",
+      "sort_order": 1
+    }
+  ],
+  "ModelExtensionOpenBayEbayProduct.getOptionValue.getOptionValue": [
+    {
+      "image": "",
+      "sort_order": 3,
+      "option_value_id": 43,
+      "language_id": 1,
+      "option_id": 1,
+      "name": "Large"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
   export class OcOptionValueDescription {
-      public optionValueId: number;
-      public name: string;
-      public optionId: number;
-      public languageId: number;
+      public option_value_id: Integer;
+      public language_id: Integer;
+      public option_id: Integer;
+      public name: String;
 
     constructor() {
     }

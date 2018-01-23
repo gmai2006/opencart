@@ -1,7 +1,7 @@
   export class OcCouponProduct {
-      public couponId: number;
-      public productId: number;
-      public couponProductId: number;
+      public coupon_product_id: Integer;
+      public coupon_id: Integer;
+      public product_id: Integer;
 
     constructor() {
     }

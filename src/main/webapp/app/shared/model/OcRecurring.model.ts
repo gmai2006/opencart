@@ -1,16 +1,16 @@
   export class OcRecurring {
-      public duration: number;
-      public trialPrice: Float;
-      public recurringId: number;
-      public price: Float;
-      public trialStatus: number;
-      public trialCycle: number;
-      public cycle: number;
-      public sortOrder: number;
-      public trialFrequency: string;
-      public frequency: string;
-      public trialDuration: number;
-      public status: number;
+      public recurring_id: Integer;
+      public price: java.math.BigDecimal;
+      public frequency: String;
+      public duration: Integer;
+      public cycle: Integer;
+      public trial_status: Byte;
+      public trial_price: java.math.BigDecimal;
+      public trial_frequency: String;
+      public trial_duration: Integer;
+      public trial_cycle: Integer;
+      public status: Byte;
+      public sort_order: Integer;
 
     constructor() {
     }

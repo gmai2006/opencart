@@ -1,0 +1,16 @@
+{
+  "ModelAccountWishlist.getWishlist.getWishlist": [
+    {
+      "customer_id": 0,
+      "product_id": 0,
+      "date_added": "Jan 15, 2018 10:05:57 PM"
+    }
+  ],
+  "ModelAccountWishlist.getTotalWishlist.getTotalWishlist": [
+    {
+      "customer_id": 0,
+      "product_id": 0,
+      "date_added": "Jan 15, 2018 10:05:57 PM"
+    }
+  ]
+}

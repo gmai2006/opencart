@@ -1,27 +1,27 @@
   export class OcCustomer {
-      public storeId: number;
+      public customer_id: Integer;
+      public customer_group_id: Integer;
+      public store_id: Integer;
+      public language_id: Integer;
+      public firstname: String;
+      public lastname: String;
+      public email: String;
+      public telephone: String;
+      public fax: String;
+      public password: String;
+      public salt: String;
+      public cart: String;
+      public wishlist: String;
       public newsletter: Boolean;
-      public customField: string;
-      public firstname: string;
-      public salt: string;
-      public code: string;
-      public wishlist: string;
-      public ip: string;
-      public addressId: number;
-      public telephone: string;
-      public languageId: number;
-      public cart: string;
-      public lastname: string;
-      public token: string;
-      public dateAdded: java.sql.Timestamp;
-      public password: string;
+      public address_id: Integer;
+      public custom_field: String;
+      public ip: String;
+      public status: Boolean;
       public approved: Boolean;
       public safe: Boolean;
-      public customerId: number;
-      public fax: string;
-      public customerGroupId: number;
-      public email: string;
-      public status: Boolean;
+      public token: String;
+      public code: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

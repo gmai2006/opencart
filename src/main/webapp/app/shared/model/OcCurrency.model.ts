@@ -1,13 +1,13 @@
   export class OcCurrency {
-      public symbolRight: string;
-      public code: string;
-      public dateModified: java.sql.Timestamp;
-      public symbolLeft: string;
-      public title: string;
-      public decimalPlace: string;
-      public value: number;;
-      public currencyId: number;
+      public currency_id: Integer;
+      public title: String;
+      public code: String;
+      public symbol_left: String;
+      public symbol_right: String;
+      public decimal_place: String;
+      public value: number;
       public status: Boolean;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

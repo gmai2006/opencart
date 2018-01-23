@@ -1,7 +1,7 @@
   export class OcCategoryToLayout {
-      public storeId: number;
-      public layoutId: number;
-      public categoryId: number;
+      public category_id: Integer;
+      public store_id: Integer;
+      public layout_id: Integer;
 
     constructor() {
     }

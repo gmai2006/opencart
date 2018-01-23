@@ -1,8 +1,8 @@
   export class OcFilterDescription {
-      public filterId: number;
-      public name: string;
-      public languageId: number;
-      public filterGroupId: number;
+      public filter_id: Integer;
+      public language_id: Integer;
+      public filter_group_id: Integer;
+      public name: String;
 
     constructor() {
     }

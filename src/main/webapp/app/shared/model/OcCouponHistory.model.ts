@@ -1,10 +1,10 @@
   export class OcCouponHistory {
-      public dateAdded: java.sql.Timestamp;
-      public couponHistoryId: number;
-      public amount: Float;
-      public couponId: number;
-      public customerId: number;
-      public orderId: number;
+      public coupon_history_id: Integer;
+      public coupon_id: Integer;
+      public order_id: Integer;
+      public customer_id: Integer;
+      public amount: java.math.BigDecimal;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

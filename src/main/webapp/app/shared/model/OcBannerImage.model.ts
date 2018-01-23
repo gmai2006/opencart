@@ -1,11 +1,11 @@
   export class OcBannerImage {
-      public image: string;
-      public bannerImageId: number;
-      public bannerId: number;
-      public link: string;
-      public languageId: number;
-      public title: string;
-      public sortOrder: number;
+      public banner_image_id: Integer;
+      public banner_id: Integer;
+      public language_id: Integer;
+      public title: String;
+      public link: String;
+      public image: String;
+      public sort_order: Integer;
 
     constructor() {
     }

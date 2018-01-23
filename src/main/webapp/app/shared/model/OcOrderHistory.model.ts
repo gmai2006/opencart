@@ -1,10 +1,10 @@
   export class OcOrderHistory {
-      public dateAdded: java.sql.Timestamp;
-      public orderStatusId: number;
-      public orderHistoryId: number;
-      public comment: string;
-      public orderId: number;
+      public order_history_id: Integer;
+      public order_id: Integer;
+      public order_status_id: Integer;
       public notify: Boolean;
+      public comment: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

@@ -1,6 +1,6 @@
   export class OcVoucherTheme {
-      public image: string;
-      public voucherThemeId: number;
+      public voucher_theme_id: Integer;
+      public image: String;
 
     constructor() {
     }

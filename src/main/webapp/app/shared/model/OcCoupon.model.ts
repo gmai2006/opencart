@@ -1,18 +1,18 @@
   export class OcCoupon {
-      public code: string;
-      public discount: Float;
-      public dateEnd: java.util.Date;
-      public type: string;
-      public dateAdded: java.sql.Timestamp;
-      public total: Float;
-      public dateStart: java.util.Date;
-      public couponId: number;
-      public shipping: Boolean;
-      public usesTotal: number;
+      public coupon_id: Integer;
+      public name: String;
+      public code: String;
+      public type: String;
+      public discount: java.math.BigDecimal;
       public logged: Boolean;
-      public name: string;
-      public usesCustomer: string;
+      public shipping: Boolean;
+      public total: java.math.BigDecimal;
+      public date_start: java.util.Date;
+      public date_end: java.util.Date;
+      public uses_total: Integer;
+      public uses_customer: String;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

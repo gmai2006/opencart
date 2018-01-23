@@ -1,0 +1,20 @@
+{
+  "ModelCatalogManufacturer.getManufacturer.getManufacturer": [
+    {
+      "name": "quillingartist.com",
+      "image": "",
+      "sort_order": 1,
+      "manufacturer_id": 1,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogManufacturer.getManufacturers.getManufacturers": [
+    {
+      "name": "quillingartist.com",
+      "image": "",
+      "sort_order": 1,
+      "manufacturer_id": 1,
+      "store_id": 0
+    }
+  ]
+}

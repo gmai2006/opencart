@@ -1,16 +1,16 @@
   export class OcVoucher {
-      public dateAdded: java.sql.Timestamp;
-      public toEmail: string;
-      public voucherThemeId: number;
-      public amount: Float;
-      public code: string;
-      public fromEmail: string;
-      public toName: string;
-      public voucherId: number;
-      public fromName: string;
-      public message: string;
-      public orderId: number;
+      public voucher_id: Integer;
+      public order_id: Integer;
+      public code: String;
+      public from_name: String;
+      public from_email: String;
+      public to_name: String;
+      public to_email: String;
+      public voucher_theme_id: Integer;
+      public message: String;
+      public amount: java.math.BigDecimal;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

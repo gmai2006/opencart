@@ -1,0 +1,294 @@
+{
+  "ModelCatalogProduct.getProductAttributes.getProductAttributeQuery": [
+    {
+      "product_id": 43,
+      "text": "1",
+      "attribute_group_id": 6,
+      "sort_order": 5,
+      "attribute_id": 2,
+      "language_id": 1,
+      "name": "No. of Cores"
+    }
+  ],
+  "ModelCatalogProduct.getTotalProductSpecials.getTotalProductSpecials": [
+    {
+      "product_special_id": 1,
+      "customer_group_id": 1,
+      "priority": 1,
+      "date_start": "Feb 10, 2016",
+      "date_end": "Feb 10, 2018",
+      "model": "Flower3.jpg ",
+      "sku": "",
+      "upc": "",
+      "ean": "",
+      "jan": "",
+      "isbn": "",
+      "mpn": "",
+      "location": "",
+      "quantity": 50,
+      "stock_status_id": 1,
+      "image": "catalog/images/flower3.jpg",
+      "manufacturer_id": 1,
+      "shipping": true,
+      "price": 4.5000,
+      "points": 0,
+      "tax_class_id": 1,
+      "date_available": "Dec 15, 2017",
+      "weight": 0E-8,
+      "weight_class_id": 0,
+      "length": 0E-8,
+      "width": 0E-8,
+      "height": 0E-8,
+      "length_class_id": 0,
+      "subtract": true,
+      "minimum": 1,
+      "sort_order": 2,
+      "status": true,
+      "viewed": 0,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "product_id": 1,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogProduct.getLatestProducts.getLatestProducts": [
+    {
+      "model": "Flower3.jpg ",
+      "sku": "",
+      "upc": "",
+      "ean": "",
+      "jan": "",
+      "isbn": "",
+      "mpn": "",
+      "location": "",
+      "quantity": 50,
+      "stock_status_id": 1,
+      "image": "catalog/images/flower3.jpg",
+      "manufacturer_id": 1,
+      "shipping": true,
+      "price": 4.5000,
+      "points": 0,
+      "tax_class_id": 1,
+      "date_available": "Dec 15, 2017",
+      "weight": 0E-8,
+      "weight_class_id": 0,
+      "length": 0E-8,
+      "width": 0E-8,
+      "height": 0E-8,
+      "length_class_id": 0,
+      "subtract": true,
+      "minimum": 1,
+      "sort_order": 2,
+      "status": true,
+      "viewed": 0,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "product_id": 1,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogProduct.getProductOptions.getProductOptionValueQuery": [
+    {
+      "product_option_value_id": 1,
+      "product_option_id": 217,
+      "product_id": 42,
+      "quantity": 100,
+      "subtract": false,
+      "price": 1.0000,
+      "price_prefix": "+",
+      "points": 0,
+      "points_prefix": "+",
+      "weight": 1.00000000,
+      "weight_prefix": "+",
+      "image": "",
+      "sort_order": 3,
+      "option_value_id": 41,
+      "language_id": 1,
+      "option_id": 5,
+      "name": "Green"
+    }
+  ],
+  "ModelCatalogProduct.getPopularProducts.getPopularProducts": [
+    {
+      "model": "Flower3.jpg ",
+      "sku": "",
+      "upc": "",
+      "ean": "",
+      "jan": "",
+      "isbn": "",
+      "mpn": "",
+      "location": "",
+      "quantity": 50,
+      "stock_status_id": 1,
+      "image": "catalog/images/flower3.jpg",
+      "manufacturer_id": 1,
+      "shipping": true,
+      "price": 4.5000,
+      "points": 0,
+      "tax_class_id": 1,
+      "date_available": "Dec 15, 2017",
+      "weight": 0E-8,
+      "weight_class_id": 0,
+      "length": 0E-8,
+      "width": 0E-8,
+      "height": 0E-8,
+      "length_class_id": 0,
+      "subtract": true,
+      "minimum": 1,
+      "sort_order": 2,
+      "status": true,
+      "viewed": 0,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "product_id": 1,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogProduct.getProductDiscounts.getProductDiscounts": [
+    {
+      "product_discount_id": 440,
+      "product_id": 42,
+      "customer_group_id": 1,
+      "quantity": 30,
+      "priority": 1,
+      "price": 66.0000,
+      "date_start": "Jan 18, 2018",
+      "date_end": "Jan 18, 2018"
+    }
+  ],
+  "ModelCatalogProduct.getProfiles.getProfiles": [],
+  "ModelCatalogProduct.getProfile.getProfile": [],
+  "ModelCatalogProduct.getProductLayoutId.getProductLayoutId": [
+    {
+      "product_id": 0,
+      "store_id": 0,
+      "layout_id": 0
+    }
+  ],
+  "ModelCatalogProduct.getProduct.getProduct": [
+    {
+      "model": "Flower3.jpg ",
+      "sku": "",
+      "upc": "",
+      "ean": "",
+      "jan": "",
+      "isbn": "",
+      "mpn": "",
+      "location": "",
+      "quantity": 50,
+      "stock_status_id": 1,
+      "shipping": true,
+      "price": 4.5000,
+      "points": 0,
+      "tax_class_id": 1,
+      "date_available": "Dec 15, 2017",
+      "weight": 0E-8,
+      "weight_class_id": 0,
+      "length": 0E-8,
+      "width": 0E-8,
+      "height": 0E-8,
+      "length_class_id": 0,
+      "subtract": true,
+      "minimum": 1,
+      "status": true,
+      "viewed": 0,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "language_id": 1,
+      "description": "Flower3.jpg ",
+      "tag": "Flower3.jpg ",
+      "meta_title": "Flower3.jpg ",
+      "meta_description": "Flower3.jpg ",
+      "meta_keyword": "Flower3.jpg ",
+      "product_id": 1,
+      "store_id": 0,
+      "manufacturer_id": 1,
+      "name": "quillingartist.com",
+      "image": "",
+      "sort_order": 1
+    }
+  ],
+  "ModelCatalogProduct.getCategories.getCategories": [
+    {
+      "product_id": 1,
+      "category_id": 1
+    }
+  ],
+  "ModelCatalogProduct.getProductAttributes.getProductAttributeGroupQuery": [
+    {
+      "product_id": 43,
+      "text": "1",
+      "attribute_id": 2,
+      "sort_order": 4,
+      "attribute_group_id": 6,
+      "language_id": 1,
+      "name": "Processor"
+    }
+  ],
+  "ModelCatalogProduct.getProductImages.getProductImages": [
+    {
+      "product_image_id": 1,
+      "product_id": 1,
+      "image": "catalog/images/flower3.jpg",
+      "sort_order": 0
+    }
+  ],
+  "ModelCatalogProduct.getProductOptions.getProductOptionQuery": [
+    {
+      "product_option_id": 224,
+      "product_id": 35,
+      "value": "",
+      "required": true,
+      "type": "select",
+      "sort_order": 10,
+      "option_id": 11,
+      "language_id": 1,
+      "name": "Size"
+    }
+  ],
+  "ModelCatalogProduct.getProductRelated.getProductRelated": [
+    {
+      "related_id": 42,
+      "model": "Birthday3.jpg ",
+      "sku": "",
+      "upc": "",
+      "ean": "",
+      "jan": "",
+      "isbn": "",
+      "mpn": "",
+      "location": "",
+      "quantity": 50,
+      "stock_status_id": 1,
+      "image": "catalog/images/birthday3.jpg",
+      "manufacturer_id": 1,
+      "shipping": true,
+      "price": 4.5000,
+      "points": 0,
+      "tax_class_id": 1,
+      "date_available": "Dec 15, 2017",
+      "weight": 0E-8,
+      "weight_class_id": 0,
+      "length": 0E-8,
+      "width": 0E-8,
+      "height": 0E-8,
+      "length_class_id": 0,
+      "subtract": true,
+      "minimum": 1,
+      "sort_order": 2,
+      "status": true,
+      "viewed": 0,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "product_id": 42,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogProduct.getBestSellerProducts.getBestSellerProducts": [
+    {
+      "order_product_id": 1,
+      "name": "s",
+      "tax": 0.0000,
+      "reward": 0
+    }
+  ]
+}

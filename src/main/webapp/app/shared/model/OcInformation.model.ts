@@ -1,7 +1,7 @@
   export class OcInformation {
-      public informationId: number;
-      public bottom: number;
-      public sortOrder: number;
+      public information_id: Integer;
+      public bottom: Integer;
+      public sort_order: Integer;
       public status: Boolean;
 
     constructor() {

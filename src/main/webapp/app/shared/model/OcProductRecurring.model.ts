@@ -1,7 +1,7 @@
   export class OcProductRecurring {
-      public recurringId: number;
-      public productId: number;
-      public customerGroupId: number;
+      public product_id: Integer;
+      public recurring_id: Integer;
+      public customer_group_id: Integer;
 
     constructor() {
     }

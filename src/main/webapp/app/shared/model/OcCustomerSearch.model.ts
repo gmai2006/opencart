@@ -1,15 +1,15 @@
   export class OcCustomerSearch {
-      public storeId: number;
-      public customerSearchId: number;
-      public dateAdded: java.sql.Timestamp;
-      public categoryId: number;
-      public subCategory: Boolean;
-      public ip: string;
+      public customer_search_id: Integer;
+      public store_id: Integer;
+      public language_id: Integer;
+      public customer_id: Integer;
+      public keyword: String;
+      public category_id: Integer;
+      public sub_category: Boolean;
       public description: Boolean;
-      public languageId: number;
-      public customerId: number;
-      public keyword: string;
-      public products: number;
+      public products: Integer;
+      public ip: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

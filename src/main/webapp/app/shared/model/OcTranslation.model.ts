@@ -1,10 +1,10 @@
   export class OcTranslation {
-      public storeId: number;
-      public translationId: number;
-      public route: string;
-      public languageId: number;
-      public value: string;
-      public key: string;
+      public translation_id: Integer;
+      public store_id: Integer;
+      public language_id: Integer;
+      public route: String;
+      public key: String;
+      public value: String;
 
     constructor() {
     }

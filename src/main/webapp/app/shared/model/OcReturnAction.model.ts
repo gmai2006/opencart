@@ -1,7 +1,7 @@
   export class OcReturnAction {
-      public name: string;
-      public languageId: number;
-      public returnActionId: number;
+      public return_action_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

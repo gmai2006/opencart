@@ -1,0 +1,28 @@
+{
+  "ModelExtensionTotalCoupon.getCoupon.getCouponHistoryQuery": [],
+  "ModelExtensionTotalCoupon.getCoupon.getCouponQuery": [
+    {
+      "coupon_id": 4,
+      "name": "-10% Discount",
+      "code": "2222",
+      "type": "P",
+      "discount": 10.0000,
+      "logged": false,
+      "shipping": false,
+      "total": 0.0000,
+      "date_start": "Jan 1, 2014",
+      "date_end": "Jan 1, 2020",
+      "uses_total": 10,
+      "uses_customer": "10",
+      "status": false,
+      "date_added": "Jan 27, 2009 1:55:03 PM"
+    }
+  ],
+  "ModelExtensionTotalCoupon.getCoupon.getCouponCategoryQuery": [
+    {
+      "product_id": 1,
+      "category_id": 1
+    }
+  ],
+  "ModelExtensionTotalCoupon.getCoupon.getCouponProductQuery": []
+}

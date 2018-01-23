@@ -1,0 +1,15 @@
+{
+  "ModelDesignBanner.getBanner.getBanner": [
+    {
+      "name": "Left Banner",
+      "status": true,
+      "banner_image_id": 101,
+      "banner_id": 9,
+      "language_id": 1,
+      "title": "test",
+      "link": "",
+      "image": "",
+      "sort_order": 0
+    }
+  ]
+}

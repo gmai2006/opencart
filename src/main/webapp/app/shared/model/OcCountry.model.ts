@@ -1,10 +1,10 @@
   export class OcCountry {
-      public isoCode2: string;
-      public addressFormat: string;
-      public isoCode3: string;
-      public name: string;
-      public postcodeRequired: Boolean;
-      public countryId: number;
+      public country_id: Integer;
+      public name: String;
+      public iso_code_2: String;
+      public iso_code_3: String;
+      public address_format: String;
+      public postcode_required: Boolean;
       public status: Boolean;
 
     constructor() {

@@ -1,8 +1,8 @@
   export class OcLengthClassDescription {
-      public lengthClassId: number;
-      public unit: string;
-      public languageId: number;
-      public title: string;
+      public length_class_id: Integer;
+      public language_id: Integer;
+      public title: String;
+      public unit: String;
 
     constructor() {
     }

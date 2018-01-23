@@ -1,8 +1,8 @@
   export class OcOptionValue {
-      public image: string;
-      public optionValueId: number;
-      public optionId: number;
-      public sortOrder: number;
+      public option_value_id: Integer;
+      public option_id: Integer;
+      public image: String;
+      public sort_order: Integer;
 
     constructor() {
     }

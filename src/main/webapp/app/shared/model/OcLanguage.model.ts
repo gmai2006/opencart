@@ -1,11 +1,11 @@
   export class OcLanguage {
-      public image: string;
-      public code: string;
-      public name: string;
-      public languageId: number;
-      public locale: string;
-      public directory: string;
-      public sortOrder: number;
+      public language_id: Integer;
+      public name: String;
+      public code: String;
+      public locale: String;
+      public image: String;
+      public directory: String;
+      public sort_order: Integer;
       public status: Boolean;
 
     constructor() {

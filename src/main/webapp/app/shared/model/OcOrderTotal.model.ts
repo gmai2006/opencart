@@ -1,10 +1,10 @@
   export class OcOrderTotal {
-      public code: string;
-      public orderTotalId: number;
-      public title: string;
-      public orderId: number;
-      public value: Float;
-      public sortOrder: number;
+      public order_total_id: Integer;
+      public order_id: Integer;
+      public code: String;
+      public title: String;
+      public value: java.math.BigDecimal;
+      public sort_order: Integer;
 
     constructor() {
     }

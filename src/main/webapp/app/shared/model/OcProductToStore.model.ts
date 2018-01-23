@@ -1,6 +1,6 @@
   export class OcProductToStore {
-      public storeId: number;
-      public productId: number;
+      public product_id: Integer;
+      public store_id: Integer;
 
     constructor() {
     }

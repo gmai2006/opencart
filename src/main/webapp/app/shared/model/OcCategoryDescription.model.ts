@@ -1,11 +1,11 @@
   export class OcCategoryDescription {
-      public metaDescription: string;
-      public categoryId: number;
-      public metaTitle: string;
-      public metaKeyword: string;
-      public name: string;
-      public description: string;
-      public languageId: number;
+      public category_id: Integer;
+      public language_id: Integer;
+      public name: String;
+      public description: String;
+      public meta_title: String;
+      public meta_description: String;
+      public meta_keyword: String;
 
     constructor() {
     }

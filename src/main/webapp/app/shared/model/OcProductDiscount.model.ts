@@ -1,12 +1,12 @@
   export class OcProductDiscount {
-      public dateStart: java.util.Date;
-      public quantity: number;
-      public price: Float;
-      public productId: number;
-      public productDiscountId: number;
-      public dateEnd: java.util.Date;
-      public priority: number;
-      public customerGroupId: number;
+      public product_discount_id: Integer;
+      public product_id: Integer;
+      public customer_group_id: Integer;
+      public quantity: Integer;
+      public priority: Integer;
+      public price: java.math.BigDecimal;
+      public date_start: java.util.Date;
+      public date_end: java.util.Date;
 
     constructor() {
     }

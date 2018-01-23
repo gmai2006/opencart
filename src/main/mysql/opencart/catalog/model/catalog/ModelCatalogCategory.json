@@ -1,0 +1,74 @@
+{
+  "ModelCatalogCategory.getCategoryFilters.getFilterQuery": [
+    {
+      "sort_order": 0
+    }
+  ],
+  "ModelCatalogCategory.getCategoryFilters.getQuery": [],
+  "ModelCatalogCategory.getTotalCategoriesByCategoryId.getTotalCategoriesByCategoryId": [
+    {
+      "image": "Nature",
+      "parent_id": 0,
+      "top": true,
+      "column": 0,
+      "sort_order": 1,
+      "status": true,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "category_id": 1,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogCategory.getCategoryLayoutId.getCategoryLayoutId": [
+    {
+      "category_id": 0,
+      "store_id": 0,
+      "layout_id": 0
+    }
+  ],
+  "ModelCatalogCategory.getCategoryFilters.getFilterGroupQuery": [
+    {
+      "filter_id": 1
+    }
+  ],
+  "ModelCatalogCategory.getCategory.getCategory": [
+    {
+      "image": "Nature",
+      "parent_id": 0,
+      "top": true,
+      "column": 0,
+      "sort_order": 1,
+      "status": true,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "language_id": 1,
+      "name": "Nature",
+      "description": "Nature",
+      "meta_title": "Nature",
+      "meta_description": "",
+      "meta_keyword": "Nature",
+      "category_id": 1,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogCategory.getCategories.getCategories": [
+    {
+      "image": "Nature",
+      "parent_id": 0,
+      "top": true,
+      "column": 0,
+      "sort_order": 1,
+      "status": true,
+      "date_added": "Dec 15, 2017 8:26:12 PM",
+      "date_modified": "Dec 15, 2017 8:26:12 PM",
+      "language_id": 1,
+      "name": "Nature",
+      "description": "Nature",
+      "meta_title": "Nature",
+      "meta_description": "",
+      "meta_keyword": "Nature",
+      "category_id": 1,
+      "store_id": 0
+    }
+  ]
+}

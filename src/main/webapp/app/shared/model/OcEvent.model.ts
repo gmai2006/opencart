@@ -1,10 +1,10 @@
   export class OcEvent {
-      public dateAdded: java.sql.Timestamp;
-      public eventId: number;
-      public code: string;
-      public action: string;
-      public trigger: string;
+      public event_id: Integer;
+      public code: String;
+      public trigger: String;
+      public action: String;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

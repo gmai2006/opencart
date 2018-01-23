@@ -1,7 +1,7 @@
   export class OcCustomerGroup {
-      public approval: number;
-      public customerGroupId: number;
-      public sortOrder: number;
+      public customer_group_id: Integer;
+      public approval: Integer;
+      public sort_order: Integer;
 
     constructor() {
     }

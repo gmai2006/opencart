@@ -1,9 +1,9 @@
   export class OcGeoZone {
-      public dateAdded: java.sql.Timestamp;
-      public dateModified: java.sql.Timestamp;
-      public geoZoneId: number;
-      public name: string;
-      public description: string;
+      public geo_zone_id: Integer;
+      public name: String;
+      public description: String;
+      public date_modified: java.sql.Timestamp;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

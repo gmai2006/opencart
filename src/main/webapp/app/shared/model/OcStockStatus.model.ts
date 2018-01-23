@@ -1,7 +1,7 @@
   export class OcStockStatus {
-      public name: string;
-      public stockStatusId: number;
-      public languageId: number;
+      public stock_status_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

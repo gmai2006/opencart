@@ -1,10 +1,10 @@
   export class OcMarketing {
-      public dateAdded: java.sql.Timestamp;
-      public code: string;
-      public name: string;
-      public description: string;
-      public clicks: number;
-      public marketingId: number;
+      public marketing_id: Integer;
+      public name: String;
+      public description: String;
+      public code: String;
+      public clicks: Integer;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

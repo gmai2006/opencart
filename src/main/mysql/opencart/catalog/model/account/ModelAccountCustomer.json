@@ -1,0 +1,175 @@
+{
+  "ModelAccountCustomer.addLoginAttempt.addLoginAttempt": [
+    {
+      "customer_login_id": 1,
+      "email": "s",
+      "ip": "s",
+      "total": 0,
+      "date_added": "Jan 15, 2018 9:31:37 PM",
+      "date_modified": "Jan 15, 2018 9:31:37 PM"
+    }
+  ],
+  "ModelAccountCustomer.getCustomerByEmail.getCustomerByEmail": [
+    {
+      "customer_id": 1,
+      "customer_group_id": 0,
+      "store_id": 0,
+      "language_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "fax": "s",
+      "password": "s",
+      "salt": "s",
+      "cart": "s",
+      "wishlist": "s",
+      "newsletter": false,
+      "address_id": 0,
+      "custom_field": "s",
+      "ip": "s",
+      "status": false,
+      "approved": false,
+      "safe": false,
+      "token": "s",
+      "code": "s",
+      "date_added": "Jan 15, 2018 9:29:02 PM"
+    }
+  ],
+  "ModelAccountCustomer.getIps.getIps": [
+    {
+      "customer_ip_id": 1,
+      "customer_id": 0,
+      "ip": "s",
+      "date_added": "Jan 15, 2018 10:03:57 PM"
+    }
+  ],
+  "ModelAccountCustomer.getLoginAttempts.getLoginAttempts": [
+    {
+      "customer_login_id": 1,
+      "email": "s",
+      "ip": "s",
+      "total": 0,
+      "date_added": "Jan 15, 2018 9:31:37 PM",
+      "date_modified": "Jan 15, 2018 9:31:37 PM"
+    }
+  ],
+  "ModelAccountCustomer.getRewardTotal.getRewardTotal": [
+    {
+      "customer_reward_id": 1,
+      "customer_id": 0,
+      "order_id": 0,
+      "description": "s",
+      "points": 0,
+      "date_added": "Jan 15, 2018 9:32:04 PM"
+    }
+  ],
+  "ModelAccountCustomer.getCustomerByCode.getCustomerByCode": [
+    {
+      "customer_id": 1,
+      "customer_group_id": 0,
+      "store_id": 0,
+      "language_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "fax": "s",
+      "password": "s",
+      "salt": "s",
+      "cart": "s",
+      "wishlist": "s",
+      "newsletter": false,
+      "address_id": 0,
+      "custom_field": "s",
+      "ip": "s",
+      "status": false,
+      "approved": false,
+      "safe": false,
+      "token": "s",
+      "code": "s",
+      "date_added": "Jan 15, 2018 9:29:02 PM"
+    }
+  ],
+  "ModelAccountCustomer.getTotalCustomersByEmail.getTotalCustomersByEmail": [
+    {
+      "customer_id": 1,
+      "customer_group_id": 0,
+      "store_id": 0,
+      "language_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "fax": "s",
+      "password": "s",
+      "salt": "s",
+      "cart": "s",
+      "wishlist": "s",
+      "newsletter": false,
+      "address_id": 0,
+      "custom_field": "s",
+      "ip": "s",
+      "status": false,
+      "approved": false,
+      "safe": false,
+      "token": "s",
+      "code": "s",
+      "date_added": "Jan 15, 2018 9:29:02 PM"
+    }
+  ],
+  "ModelAccountCustomer.getCustomer.getCustomer": [
+    {
+      "customer_id": 1,
+      "customer_group_id": 0,
+      "store_id": 0,
+      "language_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "fax": "s",
+      "password": "s",
+      "salt": "s",
+      "cart": "s",
+      "wishlist": "s",
+      "newsletter": false,
+      "address_id": 0,
+      "custom_field": "s",
+      "ip": "s",
+      "status": false,
+      "approved": false,
+      "safe": false,
+      "token": "s",
+      "code": "s",
+      "date_added": "Jan 15, 2018 9:29:02 PM"
+    }
+  ],
+  "ModelAccountCustomer.getCustomerByToken.getCustomerByToken": [
+    {
+      "customer_id": 1,
+      "customer_group_id": 0,
+      "store_id": 0,
+      "language_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "fax": "s",
+      "password": "s",
+      "salt": "s",
+      "cart": "s",
+      "wishlist": "s",
+      "newsletter": false,
+      "address_id": 0,
+      "custom_field": "s",
+      "ip": "s",
+      "status": false,
+      "approved": false,
+      "safe": false,
+      "token": "s",
+      "code": "s",
+      "date_added": "Jan 15, 2018 9:29:02 PM"
+    }
+  ]
+}

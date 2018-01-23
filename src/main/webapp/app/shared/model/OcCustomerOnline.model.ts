@@ -1,9 +1,9 @@
   export class OcCustomerOnline {
-      public referer: string;
-      public dateAdded: java.sql.Timestamp;
-      public ip: string;
-      public customerId: number;
-      public url: string;
+      public ip: String;
+      public customer_id: Integer;
+      public url: String;
+      public referer: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

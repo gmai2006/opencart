@@ -1,0 +1,18 @@
+{
+  "ModelExtensionTotalVoucherTheme.getVoucherThemes.getVoucherThemes": [
+    {
+      "image": "catalog/demo/canon_eos_5d_2.jpg",
+      "voucher_theme_id": 8,
+      "language_id": 1,
+      "name": "General"
+    }
+  ],
+  "ModelExtensionTotalVoucherTheme.getVoucherTheme.getVoucherTheme": [
+    {
+      "image": "catalog/demo/canon_eos_5d_2.jpg",
+      "voucher_theme_id": 8,
+      "language_id": 1,
+      "name": "General"
+    }
+  ]
+}

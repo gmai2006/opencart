@@ -1,13 +1,13 @@
   export class OcCategory {
-      public image: string;
-      public dateAdded: java.sql.Timestamp;
-      public categoryId: number;
+      public category_id: Integer;
+      public image: String;
+      public parent_id: Integer;
       public top: Boolean;
-      public dateModified: java.sql.Timestamp;
-      public parentId: number;
-      public column: number;
-      public sortOrder: number;
+      public column: Integer;
+      public sort_order: Integer;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

@@ -1,8 +1,8 @@
   export class OcCustomerHistory {
-      public dateAdded: java.sql.Timestamp;
-      public customerHistoryId: number;
-      public comment: string;
-      public customerId: number;
+      public customer_history_id: Integer;
+      public customer_id: Integer;
+      public comment: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

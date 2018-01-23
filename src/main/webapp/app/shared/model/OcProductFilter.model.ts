@@ -1,6 +1,6 @@
   export class OcProductFilter {
-      public filterId: number;
-      public productId: number;
+      public product_id: Integer;
+      public filter_id: Integer;
 
     constructor() {
     }

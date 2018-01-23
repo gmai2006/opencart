@@ -1,10 +1,10 @@
   export class OcCustomerLogin {
-      public customerLoginId: number;
-      public dateAdded: java.sql.Timestamp;
-      public total: number;
-      public dateModified: java.sql.Timestamp;
-      public ip: string;
-      public email: string;
+      public customer_login_id: Integer;
+      public email: String;
+      public ip: String;
+      public total: Integer;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

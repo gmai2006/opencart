@@ -1,8 +1,8 @@
   export class OcManufacturer {
-      public image: string;
-      public manufacturerId: number;
-      public name: string;
-      public sortOrder: number;
+      public manufacturer_id: Integer;
+      public name: String;
+      public image: String;
+      public sort_order: Integer;
 
     constructor() {
     }

@@ -1,7 +1,7 @@
   export class OcDownloadDescription {
-      public name: string;
-      public languageId: number;
-      public downloadId: number;
+      public download_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

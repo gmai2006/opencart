@@ -1,12 +1,12 @@
   export class OcApiSession {
-      public apiId: number;
-      public sessionName: string;
-      public dateAdded: java.sql.Timestamp;
-      public dateModified: java.sql.Timestamp;
-      public ip: string;
-      public sessionId: string;
-      public apiSessionId: number;
-      public token: string;
+      public api_session_id: Integer;
+      public api_id: Integer;
+      public token: String;
+      public session_id: String;
+      public session_name: String;
+      public ip: String;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

@@ -1,2 +1,0 @@
-implode=php.utils.StringUtils.implode
-explode=php.utils.StringUtils.explode

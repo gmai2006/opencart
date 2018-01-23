@@ -1,6 +1,6 @@
   export class OcCategoryFilter {
-      public categoryId: number;
-      public filterId: number;
+      public category_id: Integer;
+      public filter_id: Integer;
 
     constructor() {
     }

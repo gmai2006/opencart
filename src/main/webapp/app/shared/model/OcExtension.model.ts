@@ -1,7 +1,7 @@
   export class OcExtension {
-      public extensionId: number;
-      public code: string;
-      public type: string;
+      public extension_id: Integer;
+      public type: String;
+      public code: String;
 
     constructor() {
     }

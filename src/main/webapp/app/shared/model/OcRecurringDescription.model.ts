@@ -1,7 +1,7 @@
   export class OcRecurringDescription {
-      public recurringId: number;
-      public name: string;
-      public languageId: number;
+      public recurring_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

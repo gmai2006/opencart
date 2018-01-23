@@ -1,0 +1,12 @@
+{
+  "ModelCheckoutMarketing.getMarketingByCode.getMarketingByCode": [
+    {
+      "marketing_id": 1,
+      "name": "s",
+      "description": "s",
+      "code": "s",
+      "clicks": 0,
+      "date_added": "Jan 15, 2018 10:07:23 PM"
+    }
+  ]
+}

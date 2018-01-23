@@ -1,7 +1,7 @@
   export class OcApiIp {
-      public apiId: number;
-      public apiIpId: number;
-      public ip: string;
+      public api_ip_id: Integer;
+      public api_id: Integer;
+      public ip: String;
 
     constructor() {
     }

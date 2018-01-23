@@ -1,6 +1,6 @@
   export class OcProductToDownload {
-      public productId: number;
-      public downloadId: number;
+      public product_id: Integer;
+      public download_id: Integer;
 
     constructor() {
     }

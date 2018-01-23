@@ -1,8 +1,8 @@
   export class OcCustomFieldValueDescription {
-      public customFieldId: number;
-      public name: string;
-      public customFieldValueId: number;
-      public languageId: number;
+      public custom_field_value_id: Integer;
+      public language_id: Integer;
+      public custom_field_id: Integer;
+      public name: String;
 
     constructor() {
     }

@@ -1,9 +1,9 @@
   export class OcUpload {
-      public dateAdded: java.sql.Timestamp;
-      public uploadId: number;
-      public filename: string;
-      public code: string;
-      public name: string;
+      public upload_id: Integer;
+      public name: String;
+      public filename: String;
+      public code: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

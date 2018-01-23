@@ -1,9 +1,9 @@
   export class OcTaxClass {
-      public dateAdded: java.sql.Timestamp;
-      public dateModified: java.sql.Timestamp;
-      public taxClassId: number;
-      public description: string;
-      public title: string;
+      public tax_class_id: Integer;
+      public title: String;
+      public description: String;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

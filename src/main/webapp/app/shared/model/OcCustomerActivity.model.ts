@@ -1,10 +1,10 @@
   export class OcCustomerActivity {
-      public customerActivityId: number;
-      public dateAdded: java.sql.Timestamp;
-      public data: string;
-      public ip: string;
-      public customerId: number;
-      public key: string;
+      public customer_activity_id: Integer;
+      public customer_id: Integer;
+      public key: String;
+      public data: String;
+      public ip: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

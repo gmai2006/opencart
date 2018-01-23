@@ -1,0 +1,20 @@
+{
+  "ModelCatalogReview.getTotalReviewsByProductId.getTotalReviewsByProductId": [
+    {
+      "review_id": 1,
+      "customer_id": 0,
+      "author": "s",
+      "text": "s",
+      "rating": 0
+    }
+  ],
+  "ModelCatalogReview.getReviewsByProductId.getReviewsByProductId": [
+    {
+      "review_id": 1,
+      "customer_id": 0,
+      "author": "s",
+      "text": "s",
+      "rating": 0
+    }
+  ]
+}

@@ -1,7 +1,7 @@
   export class OcAttributeGroupDescription {
-      public attributeGroupId: number;
-      public name: string;
-      public languageId: number;
+      public attribute_group_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

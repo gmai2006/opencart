@@ -1,0 +1,13 @@
+{
+  "ModelExtensionOpenBayEbayOpenbay.updateOrderWithConfirmedData.updateOrderWithConfirmedData": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ]
+}

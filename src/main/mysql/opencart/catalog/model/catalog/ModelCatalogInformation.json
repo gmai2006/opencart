@@ -1,0 +1,33 @@
+{
+  "ModelCatalogInformation.getInformation.getInformation": [
+    {
+      "bottom": 1,
+      "sort_order": 3,
+      "status": true,
+      "language_id": 1,
+      "title": "Privacy Policy",
+      "description": "\u0026lt;p\u0026gt;\r\n\tPrivacy Policy\u0026lt;/p\u0026gt;\r\n",
+      "meta_title": "Privacy Policy",
+      "meta_description": "",
+      "meta_keyword": "",
+      "information_id": 3,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogInformation.getInformations.getInformations": [
+    {
+      "bottom": 1,
+      "sort_order": 3,
+      "status": true,
+      "language_id": 1,
+      "title": "Privacy Policy",
+      "description": "\u0026lt;p\u0026gt;\r\n\tPrivacy Policy\u0026lt;/p\u0026gt;\r\n",
+      "meta_title": "Privacy Policy",
+      "meta_description": "",
+      "meta_keyword": "",
+      "information_id": 3,
+      "store_id": 0
+    }
+  ],
+  "ModelCatalogInformation.getInformationLayoutId.getInformationLayoutId": []
+}

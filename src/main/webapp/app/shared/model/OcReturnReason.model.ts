@@ -1,7 +1,7 @@
   export class OcReturnReason {
-      public returnReasonId: number;
-      public name: string;
-      public languageId: number;
+      public return_reason_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

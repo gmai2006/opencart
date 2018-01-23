@@ -1,0 +1,12 @@
+{
+  "ModelExtensionEvent.getEvents.getEvents": [
+    {
+      "event_id": 1,
+      "code": "voucher",
+      "trigger": "catalog/model/checkout/order/addOrderHistory/after",
+      "action": "extension/total/voucher/send",
+      "status": false,
+      "date_added": "Jan 18, 2018 9:24:09 PM"
+    }
+  ]
+}

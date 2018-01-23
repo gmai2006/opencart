@@ -1,10 +1,10 @@
   export class OcApi {
-      public apiId: number;
-      public dateAdded: java.sql.Timestamp;
-      public dateModified: java.sql.Timestamp;
-      public name: string;
-      public key: string;
+      public api_id: Integer;
+      public name: String;
+      public key: String;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

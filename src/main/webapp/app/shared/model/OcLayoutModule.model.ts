@@ -1,9 +1,9 @@
   export class OcLayoutModule {
-      public layoutId: number;
-      public code: string;
-      public layoutModuleId: number;
-      public position: string;
-      public sortOrder: number;
+      public layout_module_id: Integer;
+      public layout_id: Integer;
+      public code: String;
+      public position: String;
+      public sort_order: Integer;
 
     constructor() {
     }

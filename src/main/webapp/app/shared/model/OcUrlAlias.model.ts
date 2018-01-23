@@ -1,7 +1,7 @@
   export class OcUrlAlias {
-      public query: string;
-      public keyword: string;
-      public urlAliasId: number;
+      public url_alias_id: Integer;
+      public query: String;
+      public keyword: String;
 
     constructor() {
     }

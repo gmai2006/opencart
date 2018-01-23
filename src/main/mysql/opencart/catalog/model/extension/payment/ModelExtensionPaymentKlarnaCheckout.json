@@ -1,0 +1,33 @@
+{
+  "ModelExtensionPaymentKlarnaCheckout.getCountryByIsoCode2.getCountryByIsoCode2": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ],
+  "ModelExtensionPaymentKlarnaCheckout.getZoneByCode.getZoneByCode": [
+    {
+      "zone_id": 1,
+      "country_id": 1,
+      "name": "Badakhshan",
+      "code": "BDS",
+      "status": true
+    }
+  ],
+  "ModelExtensionPaymentKlarnaCheckout.getCountryByIsoCode3.getCountryByIsoCode3": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ]
+}

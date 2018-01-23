@@ -1,6 +1,6 @@
   export class OcBanner {
-      public bannerId: number;
-      public name: string;
+      public banner_id: Integer;
+      public name: String;
       public status: Boolean;
 
     constructor() {

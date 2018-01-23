@@ -1,9 +1,9 @@
   export class OcTheme {
-      public storeId: number;
-      public route: string;
-      public code: string;
-      public themeId: number;
-      public theme: string;
+      public theme_id: Integer;
+      public store_id: Integer;
+      public theme: String;
+      public route: String;
+      public code: String;
 
     constructor() {
     }

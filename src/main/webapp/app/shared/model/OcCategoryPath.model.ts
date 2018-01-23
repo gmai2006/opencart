@@ -1,7 +1,7 @@
   export class OcCategoryPath {
-      public categoryId: number;
-      public level: number;
-      public pathId: number;
+      public category_id: Integer;
+      public path_id: Integer;
+      public level: Integer;
 
     constructor() {
     }

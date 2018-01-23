@@ -1,17 +1,17 @@
   export class OcUser {
-      public image: string;
-      public firstname: string;
-      public salt: string;
-      public code: string;
-      public ip: string;
-      public lastname: string;
-      public dateAdded: java.sql.Timestamp;
-      public password: string;
-      public userId: number;
-      public userGroupId: number;
-      public email: string;
-      public username: string;
+      public user_id: Integer;
+      public user_group_id: Integer;
+      public username: String;
+      public password: String;
+      public salt: String;
+      public firstname: String;
+      public lastname: String;
+      public email: String;
+      public image: String;
+      public code: String;
+      public ip: String;
       public status: Boolean;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

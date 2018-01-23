@@ -1,8 +1,8 @@
   export class OcModule {
-      public moduleId: number;
-      public code: string;
-      public name: string;
-      public setting: string;
+      public module_id: Integer;
+      public name: String;
+      public code: String;
+      public setting: String;
 
     constructor() {
     }

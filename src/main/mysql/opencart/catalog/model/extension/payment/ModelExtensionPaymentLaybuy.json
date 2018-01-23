@@ -1,0 +1,22 @@
+{
+  "ModelExtensionPaymentLaybuy.getMethod.getQuery": [
+    {
+      "zone_to_geo_zone_id": 1,
+      "country_id": 222,
+      "zone_id": 0,
+      "geo_zone_id": 4,
+      "date_added": "Jan 18, 2018 3:11:59 PM",
+      "date_modified": "Jan 18, 2018 3:11:59 PM"
+    }
+  ],
+  "ModelExtensionPaymentLaybuy.getMethod.getProduct": [
+    {
+      "product_id": 1,
+      "category_id": 1
+    }
+  ],
+  "ModelExtensionPaymentLaybuy.getPayPalProfileIds.getPayPalProfileIds": [],
+  "ModelExtensionPaymentLaybuy.getRevisedTransaction.getRevisedTransaction": [],
+  "ModelExtensionPaymentLaybuy.getTransactionByLayBuyRefId.getTransactionByLayBuyRefId": [],
+  "ModelExtensionPaymentLaybuy.getTransaction.getTransaction": []
+}

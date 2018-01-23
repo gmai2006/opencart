@@ -1,10 +1,10 @@
   export class OcAffiliateActivity {
-      public dateAdded: java.sql.Timestamp;
-      public affiliateActivityId: number;
-      public data: string;
-      public affiliateId: number;
-      public ip: string;
-      public key: string;
+      public affiliate_activity_id: Integer;
+      public affiliate_id: Integer;
+      public key: String;
+      public data: String;
+      public ip: String;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

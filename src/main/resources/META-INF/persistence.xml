@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                       http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+                       
+<persistence-unit name="opencarttest" transaction-type="RESOURCE_LOCAL">
+<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
+<!-- https://stackoverflow.com/questions/39410183/hibernate-5-2-2-no-persistence-provider-for-entitymanager -->
+<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>com.opencart.entity.OcAddress</class>
+		<class>com.opencart.entity.OcAffiliate</class>
+		<class>com.opencart.entity.OcAffiliateActivity</class>
+		<class>com.opencart.entity.OcAffiliateLogin</class>
+		<class>com.opencart.entity.OcAffiliateTransaction</class>
+		<class>com.opencart.entity.OcApi</class>
+		<class>com.opencart.entity.OcApiIp</class>
+		<class>com.opencart.entity.OcApiSession</class>
+		<class>com.opencart.entity.OcAttribute</class>
+		<class>com.opencart.entity.OcAttributeDescription</class>
+		<class>com.opencart.entity.OcAttributeGroup</class>
+		<class>com.opencart.entity.OcAttributeGroupDescription</class>
+		<class>com.opencart.entity.OcBanner</class>
+		<class>com.opencart.entity.OcBannerImage</class>
+		<class>com.opencart.entity.OcCart</class>
+		<class>com.opencart.entity.OcCategory</class>
+		<class>com.opencart.entity.OcCategoryDescription</class>
+		<class>com.opencart.entity.OcCategoryFilter</class>
+		<class>com.opencart.entity.OcCategoryPath</class>
+		<class>com.opencart.entity.OcCategoryToLayout</class>
+		<class>com.opencart.entity.OcCategoryToStore</class>
+		<class>com.opencart.entity.OcCountry</class>
+		<class>com.opencart.entity.OcCoupon</class>
+		<class>com.opencart.entity.OcCouponCategory</class>
+		<class>com.opencart.entity.OcCouponHistory</class>
+		<class>com.opencart.entity.OcCouponProduct</class>
+		<class>com.opencart.entity.OcCurrency</class>
+		<class>com.opencart.entity.OcCustomField</class>
+		<class>com.opencart.entity.OcCustomFieldCustomerGroup</class>
+		<class>com.opencart.entity.OcCustomFieldDescription</class>
+		<class>com.opencart.entity.OcCustomFieldValue</class>
+		<class>com.opencart.entity.OcCustomFieldValueDescription</class>
+		<class>com.opencart.entity.OcCustomer</class>
+		<class>com.opencart.entity.OcCustomerActivity</class>
+		<class>com.opencart.entity.OcCustomerGroup</class>
+		<class>com.opencart.entity.OcCustomerGroupDescription</class>
+		<class>com.opencart.entity.OcCustomerHistory</class>
+		<class>com.opencart.entity.OcCustomerIp</class>
+		<class>com.opencart.entity.OcCustomerLogin</class>
+		<class>com.opencart.entity.OcCustomerOnline</class>
+		<class>com.opencart.entity.OcCustomerReward</class>
+		<class>com.opencart.entity.OcCustomerSearch</class>
+		<class>com.opencart.entity.OcCustomerTransaction</class>
+		<class>com.opencart.entity.OcCustomerWishlist</class>
+		<class>com.opencart.entity.OcDownload</class>
+		<class>com.opencart.entity.OcDownloadDescription</class>
+		<class>com.opencart.entity.OcEvent</class>
+		<class>com.opencart.entity.OcExtension</class>
+		<class>com.opencart.entity.OcFilter</class>
+		<class>com.opencart.entity.OcFilterDescription</class>
+		<class>com.opencart.entity.OcFilterGroup</class>
+		<class>com.opencart.entity.OcFilterGroupDescription</class>
+		<class>com.opencart.entity.OcGeoZone</class>
+		<class>com.opencart.entity.OcInformation</class>
+		<class>com.opencart.entity.OcInformationDescription</class>
+		<class>com.opencart.entity.OcInformationToLayout</class>
+		<class>com.opencart.entity.OcInformationToStore</class>
+		<class>com.opencart.entity.OcLanguage</class>
+		<class>com.opencart.entity.OcLayout</class>
+		<class>com.opencart.entity.OcLayoutModule</class>
+		<class>com.opencart.entity.OcLayoutRoute</class>
+		<class>com.opencart.entity.OcLengthClass</class>
+		<class>com.opencart.entity.OcLengthClassDescription</class>
+		<class>com.opencart.entity.OcLocation</class>
+		<class>com.opencart.entity.OcManufacturer</class>
+		<class>com.opencart.entity.OcManufacturerToStore</class>
+		<class>com.opencart.entity.OcMarketing</class>
+		<class>com.opencart.entity.OcMenu</class>
+		<class>com.opencart.entity.OcMenuDescription</class>
+		<class>com.opencart.entity.OcMenuModule</class>
+		<class>com.opencart.entity.OcModification</class>
+		<class>com.opencart.entity.OcModule</class>
+		<class>com.opencart.entity.OcOption</class>
+		<class>com.opencart.entity.OcOptionDescription</class>
+		<class>com.opencart.entity.OcOptionValue</class>
+		<class>com.opencart.entity.OcOptionValueDescription</class>
+		<class>com.opencart.entity.OcOrder</class>
+		<class>com.opencart.entity.OcOrderCustomField</class>
+		<class>com.opencart.entity.OcOrderHistory</class>
+		<class>com.opencart.entity.OcOrderOption</class>
+		<class>com.opencart.entity.OcOrderProduct</class>
+		<class>com.opencart.entity.OcOrderRecurring</class>
+		<class>com.opencart.entity.OcOrderRecurringTransaction</class>
+		<class>com.opencart.entity.OcOrderStatus</class>
+		<class>com.opencart.entity.OcOrderTotal</class>
+		<class>com.opencart.entity.OcOrderVoucher</class>
+		<class>com.opencart.entity.OcProduct</class>
+		<class>com.opencart.entity.OcProductAttribute</class>
+		<class>com.opencart.entity.OcProductDescription</class>
+		<class>com.opencart.entity.OcProductDiscount</class>
+		<class>com.opencart.entity.OcProductFilter</class>
+		<class>com.opencart.entity.OcProductImage</class>
+		<class>com.opencart.entity.OcProductOption</class>
+		<class>com.opencart.entity.OcProductOptionValue</class>
+		<class>com.opencart.entity.OcProductRecurring</class>
+		<class>com.opencart.entity.OcProductRelated</class>
+		<class>com.opencart.entity.OcProductReward</class>
+		<class>com.opencart.entity.OcProductSpecial</class>
+		<class>com.opencart.entity.OcProductToCategory</class>
+		<class>com.opencart.entity.OcProductToDownload</class>
+		<class>com.opencart.entity.OcProductToLayout</class>
+		<class>com.opencart.entity.OcProductToStore</class>
+		<class>com.opencart.entity.OcRecurring</class>
+		<class>com.opencart.entity.OcRecurringDescription</class>
+		<class>com.opencart.entity.OcReturn</class>
+		<class>com.opencart.entity.OcReturnAction</class>
+		<class>com.opencart.entity.OcReturnHistory</class>
+		<class>com.opencart.entity.OcReturnReason</class>
+		<class>com.opencart.entity.OcReturnStatus</class>
+		<class>com.opencart.entity.OcReview</class>
+		<class>com.opencart.entity.OcSetting</class>
+		<class>com.opencart.entity.OcStockStatus</class>
+		<class>com.opencart.entity.OcStore</class>
+		<class>com.opencart.entity.OcTaxClass</class>
+		<class>com.opencart.entity.OcTaxRate</class>
+		<class>com.opencart.entity.OcTaxRateToCustomerGroup</class>
+		<class>com.opencart.entity.OcTaxRule</class>
+		<class>com.opencart.entity.OcTheme</class>
+		<class>com.opencart.entity.OcTranslation</class>
+		<class>com.opencart.entity.OcUpload</class>
+		<class>com.opencart.entity.OcUrlAlias</class>
+		<class>com.opencart.entity.OcUser</class>
+		<class>com.opencart.entity.OcUserGroup</class>
+		<class>com.opencart.entity.OcVoucher</class>
+		<class>com.opencart.entity.OcVoucherHistory</class>
+		<class>com.opencart.entity.OcVoucherTheme</class>
+		<class>com.opencart.entity.OcVoucherThemeDescription</class>
+		<class>com.opencart.entity.OcWeightClass</class>
+		<class>com.opencart.entity.OcWeightClassDescription</class>
+		<class>com.opencart.entity.OcZone</class>
+		<class>com.opencart.entity.OcZoneToGeoZone</class>
+    
+      <properties>
+	      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"></property>
+	      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/opencart2"></property>
+	      <property name="hibernate.connection.username" value="greetingcard_owner"></property>
+	      <property name="hibernate.connection.password" value="$eattle2006$$"></property>
+	      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"></property>
+	      <!-- <property name="show_sql" value="true"></property> -->
+    </properties>
+        
+  </persistence-unit>
+</persistence>

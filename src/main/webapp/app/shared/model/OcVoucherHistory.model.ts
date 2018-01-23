@@ -1,9 +1,9 @@
   export class OcVoucherHistory {
-      public dateAdded: java.sql.Timestamp;
-      public amount: Float;
-      public voucherId: number;
-      public orderId: number;
-      public voucherHistoryId: number;
+      public voucher_history_id: Integer;
+      public voucher_id: Integer;
+      public order_id: Integer;
+      public amount: java.math.BigDecimal;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

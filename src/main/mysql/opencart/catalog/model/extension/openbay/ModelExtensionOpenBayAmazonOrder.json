@@ -1,0 +1,139 @@
+{
+  "ModelExtensionOpenBayAmazonOrder.getAmazonOrderId.getAmazonOrderId": [],
+  "ModelExtensionOpenBayAmazonOrder.getProductId.getProductId": [],
+  "ModelExtensionOpenBayAmazonOrder.getProductOptionsByVar.getProductOptionsByVar": [
+    {
+      "product_option_value_id": 1,
+      "quantity": 100,
+      "subtract": false,
+      "price": 1.0000,
+      "price_prefix": "+",
+      "points": 0,
+      "points_prefix": "+",
+      "weight": 1.00000000,
+      "weight_prefix": "+",
+      "product_option_id": 224,
+      "product_id": 35,
+      "value": "",
+      "required": true,
+      "type": "radio",
+      "sort_order": 1,
+      "option_value_id": 43,
+      "option_id": 1,
+      "language_id": 1,
+      "name": "Radio"
+    }
+  ],
+  "ModelExtensionOpenBayAmazonOrder.getZoneId.getZoneId": [
+    {
+      "zone_id": 1,
+      "country_id": 1,
+      "name": "Badakhshan",
+      "code": "BDS",
+      "status": true
+    }
+  ],
+  "ModelExtensionOpenBayAmazonOrder.addAmazonOrderProducts.addAmazonOrderProducts": [
+    {
+      "order_product_id": 1,
+      "order_id": 0,
+      "product_id": 0,
+      "name": "s",
+      "model": "s",
+      "quantity": 0,
+      "price": 0.0000,
+      "total": 0.0000,
+      "tax": 0.0000,
+      "reward": 0
+    }
+  ],
+  "ModelExtensionOpenBayAmazonOrder.getCountryId.getCountryId": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ],
+  "ModelExtensionOpenBayAmazonOrder.getOrderStatus.getOrderStatus": [
+    {
+      "order_id": 1,
+      "invoice_no": 0,
+      "invoice_prefix": "s",
+      "store_id": 0,
+      "store_name": "s",
+      "store_url": "s",
+      "customer_id": 0,
+      "customer_group_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "fax": "s",
+      "custom_field": "s",
+      "payment_firstname": "s",
+      "payment_lastname": "s",
+      "payment_company": "s",
+      "payment_address_1": "s",
+      "payment_address_2": "s",
+      "payment_city": "s",
+      "payment_postcode": "s",
+      "payment_country": "s",
+      "payment_country_id": 0,
+      "payment_zone": "s",
+      "payment_zone_id": 0,
+      "payment_address_format": "s",
+      "payment_custom_field": "s",
+      "payment_method": "s",
+      "payment_code": "s",
+      "shipping_firstname": "s",
+      "shipping_lastname": "s",
+      "shipping_company": "s",
+      "shipping_address_1": "s",
+      "shipping_address_2": "s",
+      "shipping_city": "s",
+      "shipping_postcode": "s",
+      "shipping_country": "s",
+      "shipping_country_id": 0,
+      "shipping_zone": "s",
+      "shipping_zone_id": 0,
+      "shipping_address_format": "s",
+      "shipping_custom_field": "s",
+      "shipping_method": "s",
+      "shipping_code": "s",
+      "comment": "s",
+      "total": 0.0000,
+      "order_status_id": 1,
+      "affiliate_id": 0,
+      "commission": 0.0000,
+      "marketing_id": 0,
+      "tracking": "s",
+      "language_id": 0,
+      "currency_id": 0,
+      "currency_code": "s",
+      "currency_value": 0E-8,
+      "ip": "s",
+      "forwarded_ip": "s",
+      "user_agent": "s",
+      "accept_language": "s",
+      "date_added": "Jan 15, 2018 9:33:49 PM",
+      "date_modified": "Jan 15, 2018 9:33:49 PM"
+    }
+  ],
+  "ModelExtensionOpenBayAmazonOrder.getProductVar.getProductVar": [],
+  "ModelExtensionOpenBayAmazonOrder.getOrderId.getOrderId": [],
+  "ModelExtensionOpenBayAmazonOrder.getCountryName.getCountryName": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ]
+}

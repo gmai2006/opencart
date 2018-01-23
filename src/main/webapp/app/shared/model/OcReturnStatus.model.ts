@@ -1,7 +1,7 @@
   export class OcReturnStatus {
-      public name: string;
-      public returnStatusId: number;
-      public languageId: number;
+      public return_status_id: Integer;
+      public language_id: Integer;
+      public name: String;
 
     constructor() {
     }

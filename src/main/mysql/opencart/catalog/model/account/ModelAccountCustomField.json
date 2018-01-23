@@ -1,0 +1,23 @@
+{
+  "ModelAccountCustomField.getCustomFields.getCustomFieldValueQuery": [
+    {
+      "sort_order": 0
+    }
+  ],
+  "ModelAccountCustomField.getCustomFields.getCustomFieldQuery": [
+    {
+      "customer_group_id": 0,
+      "required": false
+    }
+  ],
+  "ModelAccountCustomField.getCustomField.getCustomField": [
+    {
+      "type": "s",
+      "value": "s",
+      "validation": "s",
+      "location": "s",
+      "status": false,
+      "sort_order": 0
+    }
+  ]
+}

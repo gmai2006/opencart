@@ -1,8 +1,8 @@
   export class OcWeightClassDescription {
-      public unit: string;
-      public weightClassId: number;
-      public languageId: number;
-      public title: string;
+      public weight_class_id: Integer;
+      public language_id: Integer;
+      public title: String;
+      public unit: String;
 
     constructor() {
     }

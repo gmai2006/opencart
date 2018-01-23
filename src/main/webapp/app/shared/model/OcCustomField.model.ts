@@ -1,11 +1,11 @@
   export class OcCustomField {
-      public customFieldId: number;
-      public location: string;
-      public type: string;
-      public value: string;
-      public sortOrder: number;
-      public validation: string;
+      public custom_field_id: Integer;
+      public type: String;
+      public value: String;
+      public validation: String;
+      public location: String;
       public status: Boolean;
+      public sort_order: Integer;
 
     constructor() {
     }

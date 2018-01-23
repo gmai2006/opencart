@@ -1,11 +1,11 @@
   export class OcProductSpecial {
-      public dateStart: java.util.Date;
-      public price: Float;
-      public productSpecialId: number;
-      public productId: number;
-      public dateEnd: java.util.Date;
-      public priority: number;
-      public customerGroupId: number;
+      public product_special_id: Integer;
+      public product_id: Integer;
+      public customer_group_id: Integer;
+      public priority: Integer;
+      public price: java.math.BigDecimal;
+      public date_start: java.util.Date;
+      public date_end: java.util.Date;
 
     constructor() {
     }

@@ -1,0 +1,19 @@
+{
+  "ModelDesignLayout.getLayout.getLayout": [
+    {
+      "layout_route_id": 67,
+      "layout_id": 5,
+      "store_id": 0,
+      "route": "product/manufacturer"
+    }
+  ],
+  "ModelDesignLayout.getLayoutModules.getLayoutModules": [
+    {
+      "layout_module_id": 216,
+      "layout_id": 5,
+      "code": "special.44",
+      "position": "column_left",
+      "sort_order": 1
+    }
+  ]
+}

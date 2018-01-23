@@ -1,6 +1,6 @@
   export class OcProductToCategory {
-      public categoryId: number;
-      public productId: number;
+      public product_id: Integer;
+      public category_id: Integer;
 
     constructor() {
     }

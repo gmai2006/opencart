@@ -1,0 +1,90 @@
+{
+  "ModelAccountAddress.getAddress.getAddressQuery": [
+    {
+      "address_id": 1,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "company": "s",
+      "address_1": "s",
+      "address_2": "s",
+      "city": "s",
+      "postcode": "s",
+      "country_id": 0,
+      "zone_id": 0,
+      "custom_field": "s"
+    }
+  ],
+  "ModelAccountAddress.getTotalAddresses.getTotalAddresses": [
+    {
+      "address_id": 1,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "company": "s",
+      "address_1": "s",
+      "address_2": "s",
+      "city": "s",
+      "postcode": "s",
+      "country_id": 0,
+      "zone_id": 0,
+      "custom_field": "s"
+    }
+  ],
+  "ModelAccountAddress.getAddresses.getZoneQuery": [
+    {
+      "zone_id": 1,
+      "country_id": 1,
+      "name": "Badakhshan",
+      "code": "BDS",
+      "status": true
+    }
+  ],
+  "ModelAccountAddress.getAddress.getZoneQuery": [
+    {
+      "zone_id": 1,
+      "country_id": 1,
+      "name": "Badakhshan",
+      "code": "BDS",
+      "status": true
+    }
+  ],
+  "ModelAccountAddress.getAddresses.getQuery": [
+    {
+      "address_id": 1,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "company": "s",
+      "address_1": "s",
+      "address_2": "s",
+      "city": "s",
+      "postcode": "s",
+      "country_id": 0,
+      "zone_id": 0,
+      "custom_field": "s"
+    }
+  ],
+  "ModelAccountAddress.getAddress.getCountryQuery": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ],
+  "ModelAccountAddress.getAddresses.getCountryQuery": [
+    {
+      "country_id": 1,
+      "name": "Afghanistan",
+      "iso_code_2": "AF",
+      "iso_code_3": "AFG",
+      "address_format": "",
+      "postcode_required": false,
+      "status": true
+    }
+  ]
+}

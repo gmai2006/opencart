@@ -1,13 +1,13 @@
   export class OcCart {
-      public cartId: number;
-      public apiId: number;
-      public dateAdded: java.sql.Timestamp;
-      public quantity: number;
-      public recurringId: number;
-      public productId: number;
-      public sessionId: string;
-      public customerId: number;
-      public option: string;
+      public cart_id: Integer;
+      public api_id: Integer;
+      public customer_id: Integer;
+      public session_id: String;
+      public product_id: Integer;
+      public recurring_id: Integer;
+      public option: String;
+      public quantity: Integer;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }

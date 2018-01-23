@@ -1,0 +1,9 @@
+{
+  "ModelExtensionExtension.getExtensions.getExtensions": [
+    {
+      "extension_id": 1,
+      "type": "payment",
+      "code": "cod"
+    }
+  ]
+}

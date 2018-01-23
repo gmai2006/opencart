@@ -1,0 +1,4 @@
+ModelCatalogReview.getReviewsByProductId.getReviewsByProductId=SELECT r.review_id, r.author, r.rating, r.text, p.product_id, pd.name, p.price, p.image, r.date_added FROM oc_review r LEFT JOIN oc_product p ON (r.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) WHERE p.product_id = 'param0' AND p.date_available <= NOW() AND p.status = '1' AND r.status = '1' AND pd.language_id = 'param1' ORDER BY r.date_added DESC LIMIT param2,param3
+#END
+ModelCatalogReview.getTotalReviewsByProductId.getTotalReviewsByProductId=SELECT COUNT(*) AS total FROM oc_review r LEFT JOIN oc_product p ON (r.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) WHERE p.product_id = 'param0' AND p.date_available <= NOW() AND p.status = '1' AND r.status = '1' AND pd.language_id = 'param1'
+#END

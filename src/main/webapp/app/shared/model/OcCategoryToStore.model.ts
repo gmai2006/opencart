@@ -1,6 +1,6 @@
   export class OcCategoryToStore {
-      public storeId: number;
-      public categoryId: number;
+      public category_id: Integer;
+      public store_id: Integer;
 
     constructor() {
     }

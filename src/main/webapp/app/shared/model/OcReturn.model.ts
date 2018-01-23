@@ -1,23 +1,23 @@
   export class OcReturn {
-      public firstname: string;
-      public product: string;
-      public quantity: number;
-      public returnReasonId: number;
-      public returnId: number;
-      public telephone: string;
+      public return_id: Integer;
+      public order_id: Integer;
+      public product_id: Integer;
+      public customer_id: Integer;
+      public firstname: String;
+      public lastname: String;
+      public email: String;
+      public telephone: String;
+      public product: String;
+      public model: String;
+      public quantity: Integer;
       public opened: Boolean;
-      public dateOrdered: java.util.Date;
-      public lastname: string;
-      public returnActionId: number;
-      public dateAdded: java.sql.Timestamp;
-      public dateModified: java.sql.Timestamp;
-      public productId: number;
-      public model: string;
-      public returnStatusId: number;
-      public comment: string;
-      public customerId: number;
-      public orderId: number;
-      public email: string;
+      public return_reason_id: Integer;
+      public return_action_id: Integer;
+      public return_status_id: Integer;
+      public comment: String;
+      public date_ordered: java.util.Date;
+      public date_added: java.sql.Timestamp;
+      public date_modified: java.sql.Timestamp;
 
     constructor() {
     }

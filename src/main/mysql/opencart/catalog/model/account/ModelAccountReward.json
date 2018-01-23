@@ -1,0 +1,22 @@
+{
+  "ModelAccountReward.getTotalPoints.getTotalPoints": [
+    {
+      "customer_reward_id": 1,
+      "customer_id": 0,
+      "order_id": 0,
+      "description": "s",
+      "points": 0,
+      "date_added": "Jan 15, 2018 9:32:04 PM"
+    }
+  ],
+  "ModelAccountReward.getTotalRewards.getTotalRewards": [
+    {
+      "customer_reward_id": 1,
+      "customer_id": 0,
+      "order_id": 0,
+      "description": "s",
+      "points": 0,
+      "date_added": "Jan 15, 2018 9:32:04 PM"
+    }
+  ]
+}

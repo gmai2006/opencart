@@ -1,7 +1,0 @@
-Long=number
-java.sql.Date=Date
-java.sql.Time=Date
-String=string
-Integer=number
-Double=number;
-timestamp=Date

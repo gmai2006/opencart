@@ -1,8 +1,8 @@
   export class OcStore {
-      public storeId: number;
-      public name: string;
-      public ssl: string;
-      public url: string;
+      public store_id: Integer;
+      public name: String;
+      public url: String;
+      public ssl: String;
 
     constructor() {
     }

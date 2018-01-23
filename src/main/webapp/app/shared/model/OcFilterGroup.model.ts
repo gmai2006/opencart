@@ -1,6 +1,6 @@
   export class OcFilterGroup {
-      public sortOrder: number;
-      public filterGroupId: number;
+      public filter_group_id: Integer;
+      public sort_order: Integer;
 
     constructor() {
     }

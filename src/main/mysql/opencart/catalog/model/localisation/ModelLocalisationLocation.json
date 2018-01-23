@@ -1,0 +1,15 @@
+{
+  "ModelLocalisationLocation.getLocation.getLocation": [
+    {
+      "location_id": 1,
+      "name": "s",
+      "address": "s",
+      "telephone": "s",
+      "fax": "s",
+      "geocode": "s",
+      "image": "s",
+      "open": "s",
+      "comment": "s"
+    }
+  ]
+}

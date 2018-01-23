@@ -1,0 +1,79 @@
+{
+  "ModelAccountReturn.getReturns.getReturns": [
+    {
+      "return_id": 1,
+      "order_id": 0,
+      "product_id": 0,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "product": "s",
+      "model": "s",
+      "quantity": 0,
+      "opened": false,
+      "return_reason_id": 0,
+      "return_action_id": 0,
+      "comment": "s",
+      "date_ordered": "Jan 15, 2018",
+      "date_added": "Jan 15, 2018 10:16:24 PM",
+      "date_modified": "Jan 15, 2018 10:16:24 PM"
+    }
+  ],
+  "ModelAccountReturn.getTotalReturns.getTotalReturns": [
+    {
+      "return_id": 1,
+      "order_id": 0,
+      "product_id": 0,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "product": "s",
+      "model": "s",
+      "quantity": 0,
+      "opened": false,
+      "return_reason_id": 0,
+      "return_action_id": 0,
+      "return_status_id": 0,
+      "comment": "s",
+      "date_ordered": "Jan 15, 2018",
+      "date_added": "Jan 15, 2018 10:16:24 PM",
+      "date_modified": "Jan 15, 2018 10:16:24 PM"
+    }
+  ],
+  "ModelAccountReturn.getReturnHistories.getReturnHistories": [
+    {
+      "return_history_id": 1,
+      "return_id": 0,
+      "notify": false,
+      "comment": "s",
+      "date_added": "Jan 15, 2018 10:16:24 PM"
+    }
+  ],
+  "ModelAccountReturn.getReturn.getReturn": [
+    {
+      "return_id": 1,
+      "order_id": 0,
+      "product_id": 0,
+      "customer_id": 0,
+      "firstname": "s",
+      "lastname": "s",
+      "email": "s",
+      "telephone": "s",
+      "product": "s",
+      "model": "s",
+      "quantity": 0,
+      "opened": false,
+      "return_reason_id": 0,
+      "return_action_id": 0,
+      "return_status_id": 0,
+      "comment": "s",
+      "date_ordered": "Jan 15, 2018",
+      "date_added": "Jan 15, 2018 10:16:24 PM",
+      "date_modified": "Jan 15, 2018 10:16:24 PM"
+    }
+  ]
+}

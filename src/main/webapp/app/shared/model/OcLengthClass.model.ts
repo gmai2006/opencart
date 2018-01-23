@@ -1,6 +1,6 @@
   export class OcLengthClass {
-      public lengthClassId: number;
-      public value: Float;
+      public length_class_id: Integer;
+      public value: java.math.BigDecimal;
 
     constructor() {
     }

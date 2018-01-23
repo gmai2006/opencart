@@ -1,10 +1,10 @@
   export class OcAffiliateTransaction {
-      public dateAdded: java.sql.Timestamp;
-      public affiliateTransactionId: number;
-      public amount: Float;
-      public affiliateId: number;
-      public description: string;
-      public orderId: number;
+      public affiliate_transaction_id: Integer;
+      public affiliate_id: Integer;
+      public order_id: Integer;
+      public description: String;
+      public amount: java.math.BigDecimal;
+      public date_added: java.sql.Timestamp;
 
     constructor() {
     }
